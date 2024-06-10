@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,10 +8,10 @@ const Footer = () => {
         <div className="w-full mx-auto px-12 py-4 md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <a
-              href="https://flowbite.com/"
+              href="/"
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
-              <img src="./TRIPSAGE.svg" className="h-4" alt="Logo" />
+              <Image src="/TRIPSAGE.svg" width={80} height={50} alt="Logo" />
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
