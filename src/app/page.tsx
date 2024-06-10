@@ -2,6 +2,7 @@ import Image from "next/image";
 import { GlobeDemo } from "./components/globedemo";
 import { FlipWordsDemo } from "./components/flipworddemo";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <FlipWordsDemo />
         <GlobeDemo />
       </div>
+      <Footer />
     </main>
   );
 }
