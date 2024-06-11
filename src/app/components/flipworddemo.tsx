@@ -6,7 +6,7 @@ export function FlipWordsDemo() {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+      <div className="text-5xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         Your budget, your rules: choose trips that are
         <FlipWords words={words} />
       </div>

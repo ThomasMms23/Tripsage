@@ -3,6 +3,7 @@ import { GlobeDemo } from "./components/globedemo";
 import { FlipWordsDemo } from "./components/flipworddemo";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import { Pricing } from "./components/ui/pricing";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <FlipWordsDemo />
         <GlobeDemo />
       </div>
+      <Pricing />
       <Footer />
     </main>
   );
