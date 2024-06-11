@@ -4,6 +4,7 @@ import { FlipWordsDemo } from "./components/flipworddemo";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import { Pricing } from "./components/ui/pricing";
+import { MarqueeDemo } from './components/MarqueeDemo';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <GlobeDemo />
       </div>
       <Pricing />
+      <MarqueeDemo />
       <Footer />
     </main>
   );
