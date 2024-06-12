@@ -3,6 +3,7 @@ import React from "react";
 import { faker } from "@faker-js/faker";
 import Marquee from "./ui/marquee";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 // Génération des faux avis
 const generateReviews = (count: number) => {
@@ -10,7 +11,7 @@ const generateReviews = (count: number) => {
     name: faker.name.fullName(),
     username: `@${faker.internet.userName().toLowerCase()}`,
     body: faker.lorem.sentences(2),
-    img: `https://avatar.vercel.sh/${faker.internet.userName().toLowerCase()}`,
+    img: faker.image.avatar(),
   }));
 };
 
@@ -39,7 +40,14 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <Image
+          className="rounded-full"
+          src={img}
+          alt=""
+          width={32}
+          height={32}
+          layout="fixed"
+        />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}
