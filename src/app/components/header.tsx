@@ -12,25 +12,23 @@ const Header = () => {
           </a>
         </Link>
       </div>
-      <nav>
+      <nav className="text-neutral-100">
         <ul className="flex gap-4">
           <li>
             <Link href="#demo" legacyBehavior>
-              <a className="text-gray-600 hover:text-gray-900 transition-colors">
-                Demo
-              </a>
+              <a className="hover:text-neutral-300 transition-colors">Demo</a>
             </Link>
           </li>
           <li>
             <Link href="#pricing" legacyBehavior>
-              <a className="text-gray-600 hover:text-gray-900 transition-colors">
+              <a className="hover:text-neutral-300 transition-colors">
                 Pricing
               </a>
             </Link>
           </li>
           <li>
             <Link href="#contact" legacyBehavior>
-              <a className="text-gray-600 hover:text-gray-900 transition-colors">
+              <a className="hover:text-neutral-300 transition-colors">
                 Contact
               </a>
             </Link>

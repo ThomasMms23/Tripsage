@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         "main-color": "#222",
+        "main-yellow": "#FEBC17",
       },
     },
     animation: {

@@ -55,7 +55,7 @@ const ReviewCard = ({
           <p className="text-xs font-medium dark:text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm text-neutral-100">{body}</blockquote>
     </figure>
   );
 };
@@ -66,7 +66,7 @@ export const MarqueeDemo = () => {
   const secondRow = reviews.slice(reviews.length / 2);
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20 md:shadow-xl">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-50">
           What Our Customers Say

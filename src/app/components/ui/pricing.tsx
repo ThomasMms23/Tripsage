@@ -21,7 +21,7 @@ import { Button } from "@/app/components/ui/button";
 
 export function Pricing() {
   return (
-    <section className="flex justify-center w-full py-12 md:py-24 lg:py-32 bg-gray-950 dark:bg-gray-950">
+    <section className="flex justify-center w-full py-12 md:py-24 lg:py-32  dark:bg-main-color">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="mx-auto grid max-w-4xl gap-4 text-center">
           <div className="space-y-2">
@@ -33,8 +33,8 @@ export function Pricing() {
             </p>
           </div>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950 transition-all duration-300 hover:bg-gradient-to-br from-indigo-500 to-violet-500 hover:shadow-xl dark:border-gray-800">
+        <div className="grid gap-6 sm:grid-cols-2 ">
+          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-main-yellow dark:bg-main-color transition-all duration-300 hover:bg-gradient-to-br from-indigo-500 to-violet-500 hover:shadow-xl dark:border-gray-800">
             <div className="grid gap-4">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Free</h3>
@@ -63,7 +63,7 @@ export function Pricing() {
               <Button className="w-full">Get started</Button>
             </div>
           </div>
-          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950 transition-all duration-300 hover:bg-gradient-to-br from-indigo-500 to-violet-500 hover:shadow-xl dark:border-gray-800">
+          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-gray-800 dark:bg-main-color  dark:border-main-yellow">
             <div className="grid gap-4">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Pro</h3>
@@ -91,43 +91,6 @@ export function Pricing() {
                 <li>
                   <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
                   Priority support
-                </li>
-              </ul>
-              <Button className="w-full">Get started</Button>
-            </div>
-          </div>
-          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950 transition-all duration-300 hover:bg-gradient-to-br from-indigo-500 to-violet-500 hover:shadow-xl dark:border-gray-800">
-            <div className="grid gap-4">
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold text-gray-50">Enterprise</h3>
-                <p className="text-gray-400 dark:text-gray-400">
-                  For large teams and businesses.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-gray-50">$99</div>
-                <p className="text-gray-400 dark:text-gray-400">per month</p>
-              </div>
-              <ul className="grid gap-2 text-sm text-gray-400 dark:text-gray-400">
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
-                  Unlimited users
-                </li>
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
-                  1 TB storage
-                </li>
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
-                  Enterprise features
-                </li>
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
-                  Dedicated support
-                </li>
-                <li>
-                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
-                  Custom branding
                 </li>
               </ul>
               <Button className="w-full">Get started</Button>
