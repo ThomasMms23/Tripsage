@@ -34,7 +34,7 @@ export function Pricing() {
           </div>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 ">
-          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-main-yellow dark:bg-main-color transition-all duration-300 hover:bg-gradient-to-br from-indigo-500 to-violet-500 hover:shadow-xl dark:border-gray-800">
+          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-main-yellow dark:bg-main-color dark:border-gray-800">
             <div className="grid gap-4">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Free</h3>
