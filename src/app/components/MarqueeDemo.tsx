@@ -1,48 +1,22 @@
-import { cn } from "@/lib/utils";
+// MarqueeDemo.tsx
+import React from "react";
+import { faker } from "@faker-js/faker";
 import Marquee from "./ui/marquee";
+import { cn } from "@/lib/utils";
 
-const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
-  },
-  {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
-  },
-  {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
-  },
-];
+// Génération des faux avis
+const generateReviews = (count: number) => {
+  return Array.from({ length: count }, () => ({
+    name: faker.name.fullName(),
+    username: `@${faker.internet.userName().toLowerCase()}`,
+    body: faker.lorem.sentences(2),
+    img: `https://avatar.vercel.sh/${faker.internet.userName().toLowerCase()}`,
+  }));
+};
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+const reviews = generateReviews(10); // Générer 10 avis aléatoires
 
+// Composant pour l'affichage d'un avis
 const ReviewCard = ({
   img,
   name,
@@ -61,7 +35,7 @@ const ReviewCard = ({
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
       <div className="flex flex-row items-center gap-2">
@@ -78,15 +52,19 @@ const ReviewCard = ({
   );
 };
 
+// Composant principal pour la démonstration du marquee
 export const MarqueeDemo = () => {
+  const firstRow = reviews.slice(0, reviews.length / 2);
+  const secondRow = reviews.slice(reviews.length / 2);
+
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-20 md:shadow-xl">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-50">
-        What Our Customers Say
+          What Our Customers Say
         </h2>
         <p className="max-w-[700px] text-gray-400 md:text-xl/relaxed dark:text-gray-400">
-        Real feedback from real users
+          Real feedback from real users
         </p>
       </div>
       <Marquee pauseOnHover className="[--duration:15s]">
