@@ -13,14 +13,14 @@ const World = dynamic(
 export function GlobeDemo() {
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#93c5fd",
+    globeColor: "#27272a",
     showAtmosphere: true,
-    atmosphereColor: "#93c5fd",
+    atmosphereColor: "#a8a29e",
     atmosphereAltitude: 0.1,
     emissive: "#062056",
     emissiveIntensity: 0.1,
     shininess: 0.9,
-    polygonColor: "rgba(0,0,0,0.9)",
+    polygonColor: "rgba(255,255,255,0.9)",
     ambientLight: "#999",
     directionalLeftLight: "#ffffff",
     directionalTopLight: "#ffffff",
@@ -33,7 +33,7 @@ export function GlobeDemo() {
     autoRotate: true,
     autoRotateSpeed: 0.5,
   };
-  const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+  const colors = ["#fde047", "#ca8a04", "#ca8a04"];
   const sampleArcs = [
     {
       order: 1,
