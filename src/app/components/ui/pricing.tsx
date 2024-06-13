@@ -106,7 +106,9 @@ export function Pricing() {
                   Priority support
                 </li>
               </ul>
-              <Button className="w-full absolute bottom-3">Get started</Button>
+              <Button className="w-full absolute bottom-3 bg-main-yellow">
+                Get started
+              </Button>
             </div>
           </div>
         </div>
