@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Faq from "./components/faq";
 import { Pricing } from "./components/ui/pricing";
 import { MarqueeDemo } from "./components/MarqueeDemo";
+import { TabsDemo } from "./components/tabs";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <FlipWordsDemo />
         <GlobeDemo />
       </div>
+      <TabsDemo />
       <Pricing />
       <MarqueeDemo />
       <Faq />
