@@ -13,8 +13,9 @@ export function FlipWordsDemo() {
           <FlipWords words={words} />
         </p>
         <p className="text-neutral-400 mt-6">
-          The NextJS boilerplate with all you need to build your SaaS, AI tool,
-          or any other web app and make your first $ online fast.
+          Discover your next adventure effortlessly. Enter your preferences like
+          budget, season, and weather, and let us find the perfect destination
+          for you. Start exploring now!
         </p>
         <Button className="mt-6 w-64">Discover</Button>
       </div>
