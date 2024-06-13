@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         "main-color": "#222",
         "main-yellow": "#FEBC17",
+        "dark-color": "#0F0F0F",
       },
     },
     animation: {

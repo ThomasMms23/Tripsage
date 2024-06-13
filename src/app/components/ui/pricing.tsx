@@ -21,7 +21,7 @@ import { Button } from "@/app/components/ui/button";
 
 export function Pricing() {
   return (
-    <section className="flex justify-center w-full py-12 md:py-24 lg:py-32  dark:bg-main-color">
+    <section className="flex justify-center w-full py-12 md:py-24 lg:py-32  bg-dark-color">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="mx-auto grid max-w-4xl gap-4 text-center">
           <div className="space-y-2">
@@ -33,9 +33,9 @@ export function Pricing() {
             </p>
           </div>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 ">
-          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-main-yellow dark:bg-main-color dark:border-gray-800">
-            <div className="grid gap-4">
+        <div className="grid gap-6 sm:grid-cols-3 ">
+          <div className="rounded-lg  p-6 shadow-sm  dark:bg-main-color">
+            <div className="flex flex-col justify-between h-full gap-2">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Free</h3>
                 <p className="text-gray-400 dark:text-gray-400">
@@ -60,19 +60,51 @@ export function Pricing() {
                   Basic features
                 </li>
               </ul>
-              <Button className="w-full">Get started</Button>
+              <Button className="w-full mt-8">Get started</Button>
             </div>
           </div>
-          <div className="rounded-lg border border-gray-200 border-gray-800 bg-gray-950 p-6 shadow-sm dark:border-gray-800 dark:bg-main-color  dark:border-main-yellow">
-            <div className="grid gap-4">
+          <div className="rounded-lg  p-6 shadow-sm  dark:bg-main-color">
+            <div className="flex flex-col justify-between h-full gap-2">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Pro</h3>
+                <p className="text-gray-400 dark:text-gray-400">
+                  Get started for free.
+                </p>
+              </div>
+              <div className="space-y-2">
+                <div className="text-4xl font-bold text-gray-50">$19</div>
+                <p className="text-gray-400 dark:text-gray-400">per month</p>
+              </div>
+              <ul className="grid gap-2 text-sm text-gray-400 dark:text-gray-400">
+                <li>
+                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
+                  1 user
+                </li>
+                <li>
+                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
+                  1 GB storage
+                </li>
+                <li>
+                  <CheckIcon className="mr-2 inline-block h-4 w-4 fill-gray-900 dark:fill-gray-50" />
+                  Basic features
+                </li>
+              </ul>
+              <Button className="w-full mt-8">Get started</Button>
+            </div>
+          </div>
+          <div className="relative rounded-lg border p-6 shadow-sm dark:bg-main-color  dark:border-main-yellow">
+            <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-main-yellow semi-bold px-1.5 py-0.5 rounded-full text-xs uppercase font-semibold">
+              Popular
+            </span>
+            <div className="flex flex-col justify-between h-full gap-2">
+              <div className="space-y-2">
+                <h3 className="text-2xl font-bold text-gray-50">Entreprise</h3>
                 <p className="text-gray-400 dark:text-gray-400">
                   For growing teams.
                 </p>
               </div>
               <div className="space-y-2">
-                <div className="text-4xl font-bold text-gray-50">$19</div>
+                <div className="text-4xl font-bold text-gray-50">$29</div>
                 <p className="text-gray-400 dark:text-gray-400">per month</p>
               </div>
               <ul className="grid gap-2 text-sm text-gray-400 dark:text-gray-400">
@@ -93,7 +125,7 @@ export function Pricing() {
                   Priority support
                 </li>
               </ul>
-              <Button className="w-full">Get started</Button>
+              <Button className="w-full mt-8">Get started</Button>
             </div>
           </div>
         </div>
