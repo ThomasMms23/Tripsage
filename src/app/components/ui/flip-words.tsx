@@ -51,14 +51,14 @@ export const FlipWords = ({
           stiffness: 100,
           damping: 10,
         }}
-        exit={{
-          opacity: 0,
-          y: -40,
-          x: 40,
-          filter: "blur(8px)",
-          scale: 2,
-          position: "absolute",
-        }}
+        // exit={{
+        //   opacity: 0,
+        //   y: -40,
+        //   x: 40,
+        //   filter: "blur(8px)",
+        //   scale: 2,
+        //   position: "absolute",
+        // }}
         className={cn(
           "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100",
           className
@@ -74,7 +74,7 @@ export const FlipWords = ({
               delay: index * 0.08,
               duration: 0.4,
             }}
-            className="inline-block"
+            className="inline-block text-main-yellow"
           >
             {letter}
           </motion.span>

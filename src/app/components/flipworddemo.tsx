@@ -9,9 +9,7 @@ export function FlipWordsDemo() {
       <div className="font-extrabold text-4xl lg:text-5xl mx-auto text-neutral-600 dark:text-neutral-100">
         <p className="leading-tight">
           Your budget, your rules: choose trips that are{" "}
-          <span className=" bg-neutral-100 text-main-color rotate-10">
-            sensational
-          </span>
+            <FlipWords words={words} />
         </p>
       </div>
     </div>
