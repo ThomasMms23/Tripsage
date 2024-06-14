@@ -47,13 +47,8 @@ const Header: React.FC = () => {
         <span></span>
       </div>
       <nav className={`header__nav ${isNavVisible ? "open" : ""}`}>
-        <Link legacyBehavior href="/" passHref>
-          <a className={isActiveLink("/")} onClick={closeNav}>
-            Home
-          </a>
-        </Link>
-        <Link legacyBehavior href="#Pricing" passHref>
-          <a className={isActiveLink("#Pricing")} onClick={closeNav}>
+        <Link legacyBehavior href="#pricing" passHref>
+          <a className={isActiveLink("#pricing")} onClick={closeNav}>
             Pricing
           </a>
         </Link>
@@ -62,9 +57,9 @@ const Header: React.FC = () => {
             Demo
           </a>
         </Link>
-        <Link legacyBehavior href="#Contact" passHref>
-          <a className={isActiveLink("#Contact")} onClick={closeNav}>
-            Contact
+        <Link legacyBehavior href="#faq" passHref>
+          <a className={isActiveLink("#faq")} onClick={closeNav}>
+            FAQ
           </a>
         </Link>
       </nav>
