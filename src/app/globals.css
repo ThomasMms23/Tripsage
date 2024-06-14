@@ -14,6 +14,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .after-blur-effect::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px; /* Ajustez la largeur selon vos besoins */
+    background: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /* Couleur de fond blanche avec opacité */
+    backdrop-filter: blur(5px); /* Applique un flou */
+    pointer-events: none; /* Pour éviter d'interférer avec le contenu cliquable de la div */
+  }
 }
 
 .no-visible-scrollbar {
