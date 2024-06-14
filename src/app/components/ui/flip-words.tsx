@@ -35,7 +35,7 @@ export const FlipWords = ({
         setIsAnimating(false);
       }}
     >
-      <motion.div
+      <motion.span
         initial={{
           opacity: 0,
           y: 10,
@@ -79,7 +79,7 @@ export const FlipWords = ({
             {letter}
           </motion.span>
         ))}
-      </motion.div>
+      </motion.span>
     </AnimatePresence>
   );
 };
