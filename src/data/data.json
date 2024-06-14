@@ -2,6 +2,7 @@
   "trips": [
       {
           "city": "Paris",
+          "img_url": "https://i.pinimg.com/originals/35/33/ad/3533adba2e1983f7c8b9809e1d2b82ea.jpg",
           "country": "France",
           "average_price_per_night": 153,
           "recommended_duration_days": 5,
@@ -30,6 +31,7 @@
       },
       {
           "city": "Tokyo",
+          "img_url": "https://wallpaper.forfun.com/fetch/62/62f54eab41253d1fe844ea258466179e.jpeg",
           "country": "Japan",
           "average_price_per_night": 138,
           "recommended_duration_days": 7,
@@ -58,6 +60,7 @@
       },
       {
           "city": "New York",
+          "img_url": "https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg",
           "country": "United States",
           "average_price_per_night": 150,
           "recommended_duration_days": 6,
@@ -86,6 +89,7 @@
       },
       {
           "city": "Sydney",
+          "img_url": "https://cms.finnair.com/resource/blob/747612/3523a759b61b788b834fe56aa57fa255/sydney-main-data.jpg?impolicy=crop&width=4000&height=1714&x=0&y=447",
           "country": "Australia",
           "average_price_per_night": 124,
           "recommended_duration_days": 7,
@@ -114,6 +118,7 @@
       },
       {
           "city": "Cape Town",
+          "img_url": "https://cdn.britannica.com/42/126842-050-0803BC41/Sea-Point-Cape-Town-SAf.jpg",
           "country": "South Africa",
           "average_price_per_night": 121,
           "recommended_duration_days": 5,
@@ -142,6 +147,7 @@
       },
       {
           "city": "Rio de Janeiro",
+          "img_url": "https://preview.redd.it/hhnfd8u8qtz31.jpg?auto=webp&s=a0b091aefc2c4ddf336a254f486bd2d3cd440ca0",
           "country": "Brazil",
           "average_price_per_night": 141,
           "recommended_duration_days": 6,
@@ -170,6 +176,7 @@
       },
       {
           "city": "Bangkok",
+          "img_url": "https://images8.alphacoders.com/486/thumb-1920-486625.jpg",
           "country": "Thailand",
           "average_price_per_night": 113,
           "recommended_duration_days": 5,
@@ -198,6 +205,7 @@
       },
       {
           "city": "Rome",
+          "img_url": "",
           "country": "Italy",
           "average_price_per_night": 160,
           "recommended_duration_days": 5,
@@ -226,6 +234,7 @@
       },
       {
           "city": "Istanbul",
+          "img_url": "",
           "country": "Turkey",
           "average_price_per_night": 114,
           "recommended_duration_days": 6,
@@ -254,6 +263,7 @@
       },
       {
           "city": "Lisbon",
+          "img_url": "",
           "country": "Portugal",
           "average_price_per_night": 120,
           "recommended_duration_days": 5,
@@ -282,6 +292,7 @@
       },
       {
         "city": "Hanoi",
+        "img_url": "",
         "country": "Vietnam",
         "average_price_per_night": 50,
         "recommended_duration_days": 4,
@@ -310,6 +321,7 @@
     },
     {
         "city": "Krakow",
+        "img_url": "",
         "country": "Poland",
         "average_price_per_night": 60,
         "recommended_duration_days": 3,
@@ -338,6 +350,7 @@
     },
     {
         "city": "Mexico City",
+        "img_url": "",
         "country": "Mexico",
         "average_price_per_night": 55,
         "recommended_duration_days": 5,
@@ -366,6 +379,7 @@
     },
     {
         "city": "Kathmandu",
+        "img_url": "",
         "country": "Nepal",
         "average_price_per_night": 45,
         "recommended_duration_days": 4,
@@ -394,6 +408,7 @@
     },
     {
         "city": "Bucharest",
+        "img_url": "",
         "country": "Romania",
         "average_price_per_night": 58,
         "recommended_duration_days": 3,
@@ -422,6 +437,7 @@
     },
     {
         "city": "Zurich",
+        "img_url": "",
         "country": "Switzerland",
         "average_price_per_night": 280,
         "recommended_duration_days": 5,
@@ -450,6 +466,7 @@
     },
     {
         "city": "Singapore",
+        "img_url": "",
         "country": "Singapore",
         "average_price_per_night": 250,
         "recommended_duration_days": 4,
@@ -478,6 +495,7 @@
     },
     {
         "city": "Reykjavik",
+        "img_url": "",
         "country": "Iceland",
         "average_price_per_night": 270,
         "recommended_duration_days": 5,
@@ -506,6 +524,7 @@
     },
     {
         "city": "Dubai",
+        "img_url": "",
         "country": "United Arab Emirates",
         "average_price_per_night": 260,
         "recommended_duration_days": 5,
@@ -534,6 +553,7 @@
     },
     {
         "city": "Oslo",
+        "img_url": "",
         "country": "Norway",
         "average_price_per_night": 250,
         "recommended_duration_days": 4,

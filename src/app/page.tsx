@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { GlobeDemo } from "./components/globedemo";
-import { FlipWordsDemo } from "./components/flipworddemo";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Faq from "./components/faq";
-import { Pricing } from "./components/ui/pricing";
-import { MarqueeDemo } from "./components/MarqueeDemo";
+import { GlobeDemo } from "../app/components/globedemo";
+import { FlipWordsDemo } from "../app/components/flipworddemo";
+import Header from "../app/components/header";
+import Footer from "../app/components/footer";
+import Faq from "../app/components/faq";
+import { Pricing } from "../app/components/ui/pricing";
+import { MarqueeDemo } from "../app/components/MarqueeDemo";
+import { TabsDemo } from "../app/components/tabs";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <FlipWordsDemo />
         <GlobeDemo />
       </div>
+      <TabsDemo />
       <Pricing />
       <MarqueeDemo />
       <Faq />
