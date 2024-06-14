@@ -2,7 +2,7 @@
 
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import data from '../../data/dataa.json';
+import data from '../../data/data.json';
 
 interface Trip {
   id: number;

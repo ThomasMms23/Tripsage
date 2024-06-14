@@ -1,457 +1,620 @@
 {
-  "trips": [
+    "trips": [
       {
-          "city": "Paris",
-          "img_url": "https://i.pinimg.com/originals/35/33/ad/3533adba2e1983f7c8b9809e1d2b82ea.jpg",
-          "country": "France",
-          "average_price_per_night": 153,
-          "recommended_duration_days": 5,
-          "price_by_type_in_usd": {
-              "camping": 80,
-              "airbnb": 140,
-              "hotel": 240
-          },
-          "season": "Summer",
-          "additional_info": {
-              "population": 2161000,
-              "main_attractions": ["Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral"],
-              "average_summer_temperature": "25°C",
-              "average_winter_temperature": "5°C",
-              "number_of_museums": 130,
-              "official_language": "French",
-              "currency": "Euro",
-              "currency_symbol": "€",
-              "recommended_accommodation": "Airbnb",
-              "best_visit_period": "April to October",
-              "postal_code": "75001 to 75020",
-              "safety_index": "83/100",
-              "public_transport_index": 9,
-              "recommended_local_food": ["Baguettes", "Croissants", "Cheese"]
-          }
-      },
-      {
-          "city": "Tokyo",
-          "img_url": "https://wallpaper.forfun.com/fetch/62/62f54eab41253d1fe844ea258466179e.jpeg",
-          "country": "Japan",
-          "average_price_per_night": 138,
-          "recommended_duration_days": 7,
-          "price_by_type_in_usd": {
-              "camping": 85,
-              "airbnb": 115,
-              "hotel": 215
-          },
-          "season": "Spring",
-          "additional_info": {
-              "population": 9273000,
-              "main_attractions": ["Senso-ji Temple", "Tokyo Tower", "Shibuya Crossing"],
-              "average_summer_temperature": "30°C",
-              "average_winter_temperature": "5°C",
-              "number_of_museums": 240,
-              "official_language": "Japanese",
-              "currency": "Yen",
-              "currency_symbol": "¥",
-              "recommended_accommodation": "Hotel",
-              "best_visit_period": "March to May",
-              "postal_code": "100-0000",
-              "safety_index": "86/100",
-              "public_transport_index": 10,
-              "recommended_local_food": ["Sushi", "Ramen", "Tempura"]
-          }
-      },
-      {
-          "city": "New York",
-          "img_url": "https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg",
-          "country": "United States",
-          "average_price_per_night": 150,
-          "recommended_duration_days": 6,
-          "price_by_type_in_usd": {
-              "camping": 83,
-              "airbnb": 150,
-              "hotel": 217
-          },
-          "season": "Fall",
-          "additional_info": {
-              "population": 8336000,
-              "main_attractions": ["Statue of Liberty", "Central Park", "Times Square"],
-              "average_summer_temperature": "28°C",
-              "average_winter_temperature": "-1°C",
-              "number_of_museums": 85,
-              "official_language": "English",
-              "currency": "US Dollar",
-              "currency_symbol": "$",
-              "recommended_accommodation": "Airbnb",
-              "best_visit_period": "September to November",
-              "postal_code": "10001 to 10292",
-              "safety_index": "74/100",
-              "public_transport_index": 9,
-              "recommended_local_food": ["Bagels", "New York-style Pizza", "Cheesecake"]
-          }
-      },
-      {
-          "city": "Sydney",
-          "img_url": "https://cms.finnair.com/resource/blob/747612/3523a759b61b788b834fe56aa57fa255/sydney-main-data.jpg?impolicy=crop&width=4000&height=1714&x=0&y=447",
-          "country": "Australia",
-          "average_price_per_night": 124,
-          "recommended_duration_days": 7,
-          "price_by_type_in_usd": {
-              "camping": 65,
-              "airbnb": 107,
-              "hotel": 200
-          },
-          "season": "Winter",
-          "additional_info": {
-              "population": 5312000,
-              "main_attractions": ["Sydney Opera House", "Bondi Beach", "Sydney Harbour Bridge"],
-              "average_summer_temperature": "26°C",
-              "average_winter_temperature": "8°C",
-              "number_of_museums": 40,
-              "official_language": "English",
-              "currency": "Australian Dollar",
-              "currency_symbol": "A$",
-              "recommended_accommodation": "Hotel",
-              "best_visit_period": "December to February",
-              "postal_code": "2000",
-              "safety_index": "91/100",
-              "public_transport_index": 8,
-              "recommended_local_food": ["Australian BBQ", "Vegemite", "Pies"]
-          }
-      },
-      {
-          "city": "Cape Town",
-          "img_url": "https://cdn.britannica.com/42/126842-050-0803BC41/Sea-Point-Cape-Town-SAf.jpg",
-          "country": "South Africa",
-          "average_price_per_night": 121,
-          "recommended_duration_days": 5,
-          "price_by_type_in_usd": {
-              "camping": 60,
-              "airbnb": 120,
-              "hotel": 183
-          },
-          "season": "Spring",
-          "additional_info": {
-              "population": 4617000,
-              "main_attractions": ["Table Mountain", "Robben Island", "Cape Point"],
-              "average_summer_temperature": "27°C",
-              "average_winter_temperature": "7°C",
-              "number_of_museums": 20,
-              "official_language": ["English", "Afrikaans"],
-              "currency": "Rand",
-              "currency_symbol": "R",
-              "recommended_accommodation": "Airbnb",
-              "best_visit_period": "September to November",
-              "postal_code": "8001",
-              "safety_index": "60/100",
-              "public_transport_index": 6,
-              "recommended_local_food": ["Biltong", "Bobotie", "Braai"]
-          }
-      },
-      {
-          "city": "Rio de Janeiro",
-          "img_url": "https://preview.redd.it/hhnfd8u8qtz31.jpg?auto=webp&s=a0b091aefc2c4ddf336a254f486bd2d3cd440ca0",
-          "country": "Brazil",
-          "average_price_per_night": 141,
-          "recommended_duration_days": 6,
-          "price_by_type_in_usd": {
-              "camping": 58,
-              "airbnb": 108,
-              "hotel": 167
-          },
-          "season": "Summer",
-          "additional_info": {
-              "population": 6748000,
-              "main_attractions": ["Christ the Redeemer", "Copacabana Beach", "Sugarloaf Mountain"],
-              "average_summer_temperature": "35°C",
-              "average_winter_temperature": "18°C",
-              "number_of_museums": 30,
-              "official_language": "Portuguese",
-              "currency": "Brazilian Real",
-              "currency_symbol": "R$",
-              "recommended_accommodation": "Hotel",
-              "best_visit_period": "December to March",
-              "postal_code": "20000-000",
-              "safety_index": "55/100",
-              "public_transport_index": 7,
-              "recommended_local_food": ["Feijoada", "Pão de queijo", "Brigadeiro"]
-          }
-      },
-      {
-          "city": "Bangkok",
-          "img_url": "https://images8.alphacoders.com/486/thumb-1920-486625.jpg",
-          "country": "Thailand",
-          "average_price_per_night": 113,
-          "recommended_duration_days": 5,
-          "price_by_type_in_usd": {
-              "camping": 60,
-              "airbnb": 100,
-              "hotel": 180
-          },
-          "season": "Winter",
-          "additional_info": {
-              "population": 10539000,
-              "main_attractions": ["Grand Palace", "Wat Arun", "Khao San Road"],
-              "average_summer_temperature": "35°C",
-              "average_winter_temperature": "22°C",
-              "number_of_museums": 100,
-              "official_language": "Thai",
-              "currency": "Baht",
-              "currency_symbol": "฿",
-              "recommended_accommodation": "Airbnb",
-              "best_visit_period": "November to February",
-              "postal_code": "10100",
-              "safety_index": "75/100",
-              "public_transport_index": 8,
-              "recommended_local_food": ["Pad Thai", "Tom Yum", "Som Tum"]
-          }
-      },
-      {
-          "city": "Rome",
-          "img_url": "",
-          "country": "Italy",
-          "average_price_per_night": 160,
-          "recommended_duration_days": 5,
-          "price_by_type_in_usd": {
-              "camping": 80,
-              "airbnb": 140,
-              "hotel": 260
-          },
-          "season": "Spring",
-          "additional_info": {
-              "population": 2873000,
-              "main_attractions": ["Colosseum", "Vatican", "Trevi Fountain"],
-              "average_summer_temperature": "30°C",
-              "average_winter_temperature": "10°C",
-              "number_of_museums": 80,
-              "official_language": "Italian",
-              "currency": "Euro",
-              "currency_symbol": "€",
-              "recommended_accommodation": "Airbnb",
-              "best_visit_period": "April to June",
-              "postal_code": "00100",
-              "safety_index": "80/100",
-              "public_transport_index": 8,
-              "recommended_local_food": ["Pizza", "Pasta", "Gelato"]
-          }
-      },
-      {
-          "city": "Istanbul",
-          "img_url": "",
-          "country": "Turkey",
-          "average_price_per_night": 114,
-          "recommended_duration_days": 6,
-          "price_by_type_in_usd": {
-              "camping": 60,
-              "airbnb": 100,
-              "hotel": 183
-          },
-          "season": "Fall",
-          "additional_info": {
-              "population": 15462000,
-              "main_attractions": ["Hagia Sophia", "Grand Bazaar", "Topkapi Palace"],
-              "average_summer_temperature": "29°C",
-              "average_winter_temperature": "5°C",
-              "number_of_museums": 50,
-              "official_language": "Turkish",
-              "currency": "Turkish Lira",
-              "currency_symbol": "₺",
-              "recommended_accommodation": "Hotel",
-              "best_visit_period": "September to November",
-              "postal_code": "34000",
-              "safety_index": "70/100",
-              "public_transport_index": 8,
-              "recommended_local_food": ["Kebabs", "Baklava", "Meze"]
-          }
-      },
-      {
-          "city": "Lisbon",
-          "img_url": "",
-          "country": "Portugal",
-          "average_price_per_night": 120,
-          "recommended_duration_days": 5,
-          "price_by_type_in_usd": {
-              "camping": 60,
-              "airbnb": 100,
-              "hotel": 200
-          },
-          "season": "Summer",
-          "additional_info": {
-              "population": 504718,
-              "main_attractions": ["Belém Tower", "Jerónimos Monastery", "Alfama"],
-              "average_summer_temperature": "28°C",
-              "average_winter_temperature": "10°C",
-              "number_of_museums": 50,
-              "official_language": "Portuguese",
-              "currency": "Euro",
-              "currency_symbol": "€",
-              "recommended_accommodation": "Airbnb",
-              "best_visit_period": "May to September",
-              "postal_code": "1000-001",
-              "safety_index": "85/100",
-              "public_transport_index": 8,
-              "recommended_local_food": ["Pastéis de Nata", "Bacalhau", "Grilled Sardines"]
-          }
-      },
-      {
-        "city": "Hanoi",
-        "img_url": "",
-        "country": "Vietnam",
-        "average_price_per_night": 50,
-        "recommended_duration_days": 4,
-        "price_by_type_in_usd": {
-            "camping": 20,
-            "airbnb": 40,
-            "hotel": 90
-        },
-        "season": "Spring",
-        "additional_info": {
-            "population": 8000000,
-            "main_attractions": ["Hoan Kiem Lake", "Old Quarter", "Ho Chi Minh Mausoleum"],
-            "average_summer_temperature": "32°C",
-            "average_winter_temperature": "17°C",
-            "number_of_museums": 20,
-            "official_language": "Vietnamese",
-            "currency": "Vietnamese Dong",
-            "currency_symbol": "₫",
-            "recommended_accommodation": "Airbnb",
-            "best_visit_period": "March to April",
-            "postal_code": "100000",
-            "safety_index": "70/100",
-            "public_transport_index": 6,
-            "recommended_local_food": ["Pho", "Bun Cha", "Banh Mi"]
-        }
-    },
-    {
-        "city": "Krakow",
-        "img_url": "",
-        "country": "Poland",
-        "average_price_per_night": 60,
-        "recommended_duration_days": 3,
-        "price_by_type_in_usd": {
-            "camping": 25,
-            "airbnb": 50,
-            "hotel": 105
-        },
-        "season": "Fall",
-        "additional_info": {
-            "population": 770000,
-            "main_attractions": ["Wawel Castle", "Main Market Square", "Auschwitz"],
-            "average_summer_temperature": "24°C",
-            "average_winter_temperature": "-3°C",
-            "number_of_museums": 30,
-            "official_language": "Polish",
-            "currency": "Polish Zloty",
-            "currency_symbol": "zł",
-            "recommended_accommodation": "Airbnb",
-            "best_visit_period": "September to November",
-            "postal_code": "30-001",
-            "safety_index": "80/100",
-            "public_transport_index": 8,
-            "recommended_local_food": ["Pierogi", "Zapiekanka", "Kielbasa"]
-        }
-    },
-    {
-        "city": "Mexico City",
-        "img_url": "",
-        "country": "Mexico",
-        "average_price_per_night": 55,
+        "id": 1,
+        "city": "Paris",
+        "img_url": "https://i.pinimg.com/originals/35/33/ad/3533adba2e1983f7c8b9809e1d2b82ea.jpg",
+        "country": "France",
+        "average_price_per_night": 153,
         "recommended_duration_days": 5,
         "price_by_type_in_usd": {
-            "camping": 20,
-            "airbnb": 35,
-            "hotel": 110
+          "camping": 80,
+          "airbnb": 140,
+          "hotel": 240
+        },
+        "season": "Summer",
+        "visa_required": false,
+        "activities": ["Sightseeing", "Museum Tours", "Shopping"],
+        "pets_allowed": true,
+        "additional_info": {
+          "population": 2161000,
+          "main_attractions": ["Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral"],
+          "average_summer_temperature": "25°C",
+          "average_winter_temperature": "5°C",
+          "number_of_museums": 130,
+          "official_language": "French",
+          "currency": "Euro",
+          "currency_symbol": "€",
+          "recommended_accommodation": "Airbnb",
+          "best_visit_period": "April to October",
+          "postal_code": "75001 to 75020",
+          "safety_index": "83/100",
+          "public_transport_index": 9,
+          "recommended_local_food": ["Baguettes", "Croissants", "Cheese"]
+        }
+      },
+      {
+        "id": 2,
+        "city": "Tokyo",
+        "img_url": "https://wallpaper.forfun.com/fetch/62/62f54eab41253d1fe844ea258466179e.jpeg",
+        "country": "Japan",
+        "average_price_per_night": 138,
+        "recommended_duration_days": 7,
+        "price_by_type_in_usd": {
+          "camping": 85,
+          "airbnb": 115,
+          "hotel": 215
+        },
+        "season": "Spring",
+        "visa_required": false,
+        "activities": ["Shopping", "Cultural Tours", "Food Tasting"],
+        "pets_allowed": false,
+        "additional_info": {
+          "population": 9273000,
+          "main_attractions": ["Senso-ji Temple", "Tokyo Tower", "Shibuya Crossing"],
+          "average_summer_temperature": "30°C",
+          "average_winter_temperature": "5°C",
+          "number_of_museums": 240,
+          "official_language": "Japanese",
+          "currency": "Yen",
+          "currency_symbol": "¥",
+          "recommended_accommodation": "Hotel",
+          "best_visit_period": "March to May",
+          "postal_code": "100-0000",
+          "safety_index": "86/100",
+          "public_transport_index": 10,
+          "recommended_local_food": ["Sushi", "Ramen", "Tempura"]
+        }
+      },
+      {
+        "id": 3,
+        "city": "New York",
+        "img_url": "https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg",
+        "country": "United States",
+        "average_price_per_night": 150,
+        "recommended_duration_days": 6,
+        "price_by_type_in_usd": {
+          "camping": 83,
+          "airbnb": 150,
+          "hotel": 217
+        },
+        "season": "Fall",
+        "visa_required": false,
+        "activities": ["Sightseeing", "Broadway Shows", "Shopping"],
+        "pets_allowed": true,
+        "additional_info": {
+          "population": 8336000,
+          "main_attractions": ["Statue of Liberty", "Central Park", "Times Square"],
+          "average_summer_temperature": "28°C",
+          "average_winter_temperature": "-1°C",
+          "number_of_museums": 85,
+          "official_language": "English",
+          "currency": "US Dollar",
+          "currency_symbol": "$",
+          "recommended_accommodation": "Airbnb",
+          "best_visit_period": "September to November",
+          "postal_code": "10001 to 10292",
+          "safety_index": "74/100",
+          "public_transport_index": 9,
+          "recommended_local_food": ["Bagels", "New York-style Pizza", "Cheesecake"]
+        }
+      },
+      {
+        "id": 4,
+        "city": "Sydney",
+        "img_url": "https://cms.finnair.com/resource/blob/747612/3523a759b61b788b834fe56aa57fa255/sydney-main-data.jpg?impolicy=crop&width=4000&height=1714&x=0&y=447",
+        "country": "Australia",
+        "average_price_per_night": 124,
+        "recommended_duration_days": 7,
+        "price_by_type_in_usd": {
+          "camping": 65,
+          "airbnb": 107,
+          "hotel": 200
         },
         "season": "Winter",
+        "visa_required": true,
+        "activities": ["Beach", "Wildlife Tours", "Sightseeing"],
+        "pets_allowed": true,
         "additional_info": {
-            "population": 9209944,
-            "main_attractions": ["Zócalo", "Chapultepec Park", "Frida Kahlo Museum"],
-            "average_summer_temperature": "26°C",
-            "average_winter_temperature": "13°C",
-            "number_of_museums": 150,
-            "official_language": "Spanish",
-            "currency": "Mexican Peso",
-            "currency_symbol": "$",
-            "recommended_accommodation": "Airbnb",
-            "best_visit_period": "November to March",
-            "postal_code": "01000",
-            "safety_index": "60/100",
-            "public_transport_index": 7,
-            "recommended_local_food": ["Tacos", "Tamales", "Churros"]
+          "population": 5312000,
+          "main_attractions": ["Sydney Opera House", "Bondi Beach", "Sydney Harbour Bridge"],
+          "average_summer_temperature": "26°C",
+          "average_winter_temperature": "8°C",
+          "number_of_museums": 40,
+          "official_language": "English",
+          "currency": "Australian Dollar",
+          "currency_symbol": "A$",
+          "recommended_accommodation": "Hotel",
+          "best_visit_period": "December to February",
+          "postal_code": "2000",
+          "safety_index": "91/100",
+          "public_transport_index": 8,
+          "recommended_local_food": ["Australian BBQ", "Vegemite", "Pies"]
         }
-    },
-    {
-        "city": "Kathmandu",
-        "img_url": "",
-        "country": "Nepal",
-        "average_price_per_night": 45,
+      },
+      {
+        "id": 5,
+        "city": "Cape Town",
+        "img_url": "https://cdn.britannica.com/42/126842-050-0803BC41/Sea-Point-Cape-Town-SAf.jpg",
+        "country": "South Africa",
+        "average_price_per_night": 121,
+        "recommended_duration_days": 5,
+        "price_by_type_in_usd": {
+          "camping": 60,
+          "airbnb": 120,
+          "hotel": 183
+        },
+        "season": "Spring",
+        "visa_required": true,
+        "activities": ["Wildlife Tours", "Beach", "Hiking"],
+        "pets_allowed": false,
+        "additional_info": {
+          "population": 4617000,
+          "main_attractions": ["Table Mountain", "Robben Island", "Cape Point"],
+          "average_summer_temperature": "27°C",
+          "average_winter_temperature": "7°C",
+          "number_of_museums": 20,
+          "official_language": ["English", "Afrikaans"],
+          "currency": "Rand",
+          "currency_symbol": "R",
+          "recommended_accommodation": "Airbnb",
+          "best_visit_period": "September to November",
+          "postal_code": "8001",
+          "safety_index": "60/100",
+          "public_transport_index": 6,
+          "recommended_local_food": ["Biltong", "Bobotie", "Braai"]
+        }
+      },
+      {
+        "id": 6,
+        "city": "Rio de Janeiro",
+        "img_url": "https://preview.redd.it/hhnfd8u8qtz31.jpg?auto=webp&s=a0b091aefc2c4ddf336a254f486bd2d3cd440ca0",
+        "country": "Brazil",
+        "average_price_per_night": 141,
+        "recommended_duration_days": 6,
+        "price_by_type_in_usd": {
+          "camping": 58,
+          "airbnb": 108,
+          "hotel": 167
+        },
+        "season": "Summer",
+        "visa_required": true,
+        "activities": ["Beach", "Sightseeing", "Cultural Tours"],
+        "pets_allowed": true,
+        "additional_info": {
+          "population": 6748000,
+          "main_attractions": ["Christ the Redeemer", "Copacabana Beach", "Sugarloaf Mountain"],
+          "average_summer_temperature": "35°C",
+          "average_winter_temperature": "18°C",
+          "number_of_museums": 30,
+          "official_language": "Portuguese",
+          "currency": "Brazilian Real",
+          "currency_symbol": "R$",
+          "recommended_accommodation": "Hotel",
+          "best_visit_period": "December to March",
+          "postal_code": "20000-000",
+          "safety_index": "55/100",
+          "public_transport_index": 7,
+          "recommended_local_food": ["Feijoada", "Pão de queijo", "Brigadeiro"]
+        }
+      },
+      {
+        "id": 7,
+        "city": "Bangkok",
+        "img_url": "https://images8.alphacoders.com/486/thumb-1920-486625.jpg",
+        "country": "Thailand",
+        "average_price_per_night": 113,
+        "recommended_duration_days": 5,
+        "price_by_type_in_usd": {
+          "camping": 60,
+          "airbnb": 100,
+          "hotel": 180
+        },
+        "season": "Winter",
+        "visa_required": true,
+        "activities": ["Sightseeing", "Shopping", "Nightlife"],
+        "pets_allowed": false,
+        "additional_info": {
+          "population": 10539000,
+          "main_attractions": ["Grand Palace", "Wat Arun", "Khao San Road"],
+          "average_summer_temperature": "35°C",
+          "average_winter_temperature": "22°C",
+          "number_of_museums": 100,
+          "official_language": "Thai",
+          "currency": "Baht",
+          "currency_symbol": "฿",
+          "recommended_accommodation": "Airbnb",
+          "best_visit_period": "November to February",
+          "postal_code": "10100",
+          "safety_index": "75/100",
+          "public_transport_index": 8,
+          "recommended_local_food": ["Pad Thai", "Tom Yum", "Som Tum"]
+        }
+      },
+      {
+        "id": 8,
+        "city": "Istanbul",
+        "img_url": "https://i.pinimg.com/originals/c8/d3/08/c8d308538241246b0f06f5c9058f779a.jpg",
+        "country": "Turkey",
+        "average_price_per_night": 110,
+        "recommended_duration_days": 6,
+        "price_by_type_in_usd": {
+          "camping": 50,
+          "airbnb": 90,
+          "hotel": 150
+        },
+        "season": "Spring",
+        "visa_required": true,
+        "activities": ["Sightseeing", "Cultural Tours", "Shopping"],
+        "pets_allowed": false,
+        "additional_info": {
+          "population": 15460000,
+          "main_attractions": ["Hagia Sophia", "Blue Mosque", "Topkapi Palace"],
+          "average_summer_temperature": "28°C",
+          "average_winter_temperature": "8°C",
+          "number_of_museums": 50,
+          "official_language": "Turkish",
+          "currency": "Turkish Lira",
+          "currency_symbol": "₺",
+          "recommended_accommodation": "Hotel",
+          "best_visit_period": "April to June",
+          "postal_code": "34000",
+          "safety_index": "72/100",
+          "public_transport_index": 7,
+          "recommended_local_food": ["Kebab", "Baklava", "Meze"]
+        }
+      },
+      {
+        "id": 9,
+        "city": "Rome",
+        "img_url": "https://images.alphacoders.com/746/746123.jpg",
+        "country": "Italy",
+        "average_price_per_night": 130,
+        "recommended_duration_days": 5,
+        "price_by_type_in_usd": {
+          "camping": 70,
+          "airbnb": 100,
+          "hotel": 200
+        },
+        "season": "Fall",
+        "visa_required": false,
+        "activities": ["Sightseeing", "Cultural Tours", "Food Tasting"],
+        "pets_allowed": true,
+        "additional_info": {
+          "population": 2873000,
+          "main_attractions": ["Colosseum", "Vatican Museums", "Trevi Fountain"],
+          "average_summer_temperature": "30°C",
+          "average_winter_temperature": "10°C",
+          "number_of_museums": 100,
+          "official_language": "Italian",
+          "currency": "Euro",
+          "currency_symbol": "€",
+          "recommended_accommodation": "Hotel",
+          "best_visit_period": "September to November",
+          "postal_code": "00100",
+          "safety_index": "70/100",
+          "public_transport_index": 7,
+          "recommended_local_food": ["Pizza", "Pasta", "Gelato"]
+        }
+      },
+      {
+        "id": 10,
+        "city": "Marrakech",
+        "img_url": "https://i.pinimg.com/originals/5b/c8/0c/5bc80c7cab63100a243f65c6ff1b6699.jpg",
+        "country": "Morocco",
+        "average_price_per_night": 95,
         "recommended_duration_days": 4,
         "price_by_type_in_usd": {
-            "camping": 15,
-            "airbnb": 30,
-            "hotel": 90
+          "camping": 40,
+          "airbnb": 70,
+          "hotel": 120
         },
-        "season": "Autumn",
+        "season": "Spring",
+        "visa_required": true,
+        "activities": ["Sightseeing", "Cultural Tours", "Shopping"],
+        "pets_allowed": false,
         "additional_info": {
-            "population": 1000000,
-            "main_attractions": ["Pashupatinath Temple", "Boudhanath Stupa", "Durbar Square"],
-            "average_summer_temperature": "27°C",
+          "population": 928850,
+          "main_attractions": ["Jemaa el-Fnaa", "Koutoubia Mosque", "Majorelle Garden"],
+          "average_summer_temperature": "38°C",
+          "average_winter_temperature": "12°C",
+          "number_of_museums": 20,
+          "official_language": "Arabic",
+          "currency": "Moroccan Dirham",
+          "currency_symbol": "MAD",
+          "recommended_accommodation": "Hotel",
+          "best_visit_period": "March to May",
+          "postal_code": "40000",
+          "safety_index": "65/100",
+          "public_transport_index": 6,
+          "recommended_local_food": ["Tagine", "Couscous", "Mint Tea"]
+        }
+      },
+        {
+          "id": 11,
+          "city": "Dubai",
+          "img_url": "https://i.pinimg.com/originals/71/12/22/711222d2a5c1748e382c9e3deec7738b.jpg",
+          "country": "United Arab Emirates",
+          "average_price_per_night": 300,
+          "recommended_duration_days": 5,
+          "price_by_type_in_usd": {
+            "camping": 150,
+            "airbnb": 250,
+            "hotel": 400
+          },
+          "season": "Winter",
+          "visa_required": true,
+          "activities": ["Shopping", "Sightseeing", "Desert Safari"],
+          "pets_allowed": false,
+          "additional_info": {
+            "population": 3331400,
+            "main_attractions": ["Burj Khalifa", "Dubai Mall", "Palm Jumeirah"],
+            "average_summer_temperature": "40°C",
+            "average_winter_temperature": "24°C",
+            "number_of_museums": 15,
+            "official_language": "Arabic",
+            "currency": "Dirham",
+            "currency_symbol": "AED",
+            "recommended_accommodation": "Hotel",
+            "best_visit_period": "November to March",
+            "postal_code": "00000",
+            "safety_index": "90/100",
+            "public_transport_index": 8,
+            "recommended_local_food": ["Shawarma", "Hummus", "Falafel"]
+          }
+        },
+        {
+          "id": 12,
+          "city": "Kyoto",
+          "img_url": "https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg",
+          "country": "Japan",
+          "average_price_per_night": 80,
+          "recommended_duration_days": 4,
+          "price_by_type_in_usd": {
+            "camping": 40,
+            "airbnb": 70,
+            "hotel": 120
+          },
+          "season": "Spring",
+          "visa_required": false,
+          "activities": ["Sightseeing", "Cultural Tours", "Temple Visits"],
+          "pets_allowed": false,
+          "additional_info": {
+            "population": 1475000,
+            "main_attractions": ["Fushimi Inari Shrine", "Kinkaku-ji", "Arashiyama Bamboo Grove"],
+            "average_summer_temperature": "30°C",
+            "average_winter_temperature": "5°C",
+            "number_of_museums": 30,
+            "official_language": "Japanese",
+            "currency": "Yen",
+            "currency_symbol": "¥",
+            "recommended_accommodation": "Airbnb",
+            "best_visit_period": "March to May",
+            "postal_code": "600-0000",
+            "safety_index": "85/100",
+            "public_transport_index": 9,
+            "recommended_local_food": ["Kaiseki", "Yudofu", "Kyoto Sushi"]
+          }
+        },
+        {
+          "id": 13,
+          "city": "Maldives",
+          "img_url": "https://wallpaper.forfun.com/fetch/16/168ca3274fe6aff2d6ffcff5807231b5.jpeg",
+          "country": "Maldives",
+          "average_price_per_night": 450,
+          "recommended_duration_days": 7,
+          "price_by_type_in_usd": {
+            "camping": 300,
+            "airbnb": 400,
+            "hotel": 600
+          },
+          "season": "Summer",
+          "visa_required": false,
+          "activities": ["Snorkeling", "Diving", "Beach"],
+          "pets_allowed": false,
+          "additional_info": {
+            "population": 392000,
+            "main_attractions": ["Male", "Maafushi", "Hulhumale"],
+            "average_summer_temperature": "30°C",
+            "average_winter_temperature": "28°C",
+            "number_of_museums": 5,
+            "official_language": "Dhivehi",
+            "currency": "Maldivian Rufiyaa",
+            "currency_symbol": "MVR",
+            "recommended_accommodation": "Resort",
+            "best_visit_period": "May to October",
+            "postal_code": "20000",
+            "safety_index": "88/100",
+            "public_transport_index": 4,
+            "recommended_local_food": ["Garudhiya", "Mas Huni", "Fihunu Mas"]
+          }
+        },
+        {
+          "id": 14,
+          "city": "Kathmandu",
+          "img_url": "https://photoflytravel.org/wp-content/uploads/2019/01/buddha-eyes-swayambhunath-temple-kathmandu-nepal-uhd-4k-wallpaper-2-e1593197407355.jpg",
+          "country": "Nepal",
+          "average_price_per_night": 20,
+          "recommended_duration_days": 5,
+          "price_by_type_in_usd": {
+            "camping": 10,
+            "airbnb": 15,
+            "hotel": 25
+          },
+          "season": "Spring",
+          "visa_required": true,
+          "activities": ["Trekking", "Cultural Tours", "Sightseeing"],
+          "pets_allowed": true,
+          "additional_info": {
+            "population": 1003285,
+            "main_attractions": ["Swayambhunath", "Pashupatinath Temple", "Boudhanath"],
+            "average_summer_temperature": "28°C",
             "average_winter_temperature": "10°C",
             "number_of_museums": 10,
             "official_language": "Nepali",
             "currency": "Nepalese Rupee",
-            "currency_symbol": "₨",
-            "recommended_accommodation": "Hotel",
-            "best_visit_period": "September to November",
-            "postal_code": "44600",
-            "safety_index": "65/100",
-            "public_transport_index": 5,
-            "recommended_local_food": ["Momo", "Dal Bhat", "Chatamari"]
-        }
-    },
-    {
-        "city": "Bucharest",
-        "img_url": "",
-        "country": "Romania",
-        "average_price_per_night": 58,
-        "recommended_duration_days": 3,
-        "price_by_type_in_usd": {
-            "camping": 22,
-            "airbnb": 48,
-            "hotel": 105
-        },
-        "season": "Spring",
-        "additional_info": {
-            "population": 1883425,
-            "main_attractions": ["Parliament Palace", "Old Town", "Herastrau Park"],
-            "average_summer_temperature": "29°C",
-            "average_winter_temperature": "-2°C",
-            "number_of_museums": 40,
-            "official_language": "Romanian",
-            "currency": "Romanian Leu",
-            "currency_symbol": "lei",
+            "currency_symbol": "NPR",
             "recommended_accommodation": "Airbnb",
-            "best_visit_period": "April to June",
-            "postal_code": "010011",
-            "safety_index": "75/100",
-            "public_transport_index": 7,
-            "recommended_local_food": ["Sarmale", "Mici", "Ciorba"]
-        }
-    },
-    {
-        "city": "Zurich",
-        "img_url": "",
-        "country": "Switzerland",
-        "average_price_per_night": 280,
-        "recommended_duration_days": 5,
-        "price_by_type_in_usd": {
-            "camping": 150,
-            "airbnb": 230,
-            "hotel": 460
+            "best_visit_period": "March to May",
+            "postal_code": "44600",
+            "safety_index": "60/100",
+            "public_transport_index": 5,
+            "recommended_local_food": ["Momo", "Dal Bhat", "Newari Cuisine"]
+          }
         },
-        "season": "Winter",
-        "additional_info": {
-            "population": 434008,
-            "main_attractions": ["Lake Zurich", "Old Town", "Uetliberg"],
-            "average_summer_temperature": "24°C",
-            "average_winter_temperature": "0°C",
+        {
+          "id": 15,
+          "city": "Santorini",
+          "img_url": "https://4kwallpapers.com/images/wallpapers/oia-santorini-greece-sunset-panoramic-colorful-sky-blue-2560x1440-5017.jpg",
+          "country": "Greece",
+          "average_price_per_night": 200,
+          "recommended_duration_days": 5,
+          "price_by_type_in_usd": {
+            "camping": 100,
+            "airbnb": 180,
+            "hotel": 250
+          },
+          "season": "Summer",
+          "visa_required": false,
+          "activities": ["Sightseeing", "Beach", "Cultural Tours"],
+          "pets_allowed": true,
+          "additional_info": {
+            "population": 15500,
+            "main_attractions": ["Oia", "Fira", "Red Beach"],
+            "average_summer_temperature": "27°C",
+            "average_winter_temperature": "12°C",
+            "number_of_museums": 5,
+            "official_language": "Greek",
+            "currency": "Euro",
+            "currency_symbol": "€",
+            "recommended_accommodation": "Hotel",
+            "best_visit_period": "June to September",
+            "postal_code": "84700",
+            "safety_index": "80/100",
+            "public_transport_index": 7,
+            "recommended_local_food": ["Fava", "Tomatokeftedes", "Melitinia"]
+          }
+        },
+        {
+          "id": 16,
+          "city": "Buenos Aires",
+          "img_url": "https://w.forfun.com/fetch/aa/aa8b89363bdf8a2528a63f3e3c2f3389.jpeg",
+          "country": "Argentina",
+          "average_price_per_night": 50,
+          "recommended_duration_days": 6,
+          "price_by_type_in_usd": {
+            "camping": 20,
+            "airbnb": 45,
+            "hotel": 70
+          },
+          "season": "Fall",
+          "visa_required": false,
+          "activities": ["Sightseeing", "Tango Shows", "Cultural Tours"],
+          "pets_allowed": true,
+          "additional_info": {
+            "population": 2891082,
+            "main_attractions": ["La Boca", "Recoleta Cemetery", "Teatro Colon"],
+            "average_summer_temperature": "29°C",
+            "average_winter_temperature": "11°C",
+            "number_of_museums": 50,
+            "official_language": "Spanish",
+            "currency": "Argentine Peso",
+            "currency_symbol": "ARS",
+            "recommended_accommodation": "Airbnb",
+            "best_visit_period": "March to May",
+            "postal_code": "1000",
+            "safety_index": "65/100",
+            "public_transport_index": 7,
+            "recommended_local_food": ["Asado", "Empanadas", "Milanesa"]
+          }
+        },
+        {
+          "id": 17,
+          "city": "Reykjavik",
+          "img_url": "https://i.pinimg.com/originals/f3/e0/87/f3e0877c29efcc0acae630d7f3add523.jpg",
+          "country": "Iceland",
+          "average_price_per_night": 220,
+          "recommended_duration_days": 4,
+          "price_by_type_in_usd": {
+            "camping": 120,
+            "airbnb": 200,
+            "hotel": 300
+          },
+          "season": "Winter",
+          "visa_required": false,
+          "activities": ["Sightseeing", "Hot Springs", "Northern Lights"],
+          "pets_allowed": false,
+          "additional_info": {
+            "population": 128793,
+            "main_attractions": ["Blue Lagoon", "Hallgrimskirkja", "Harpa Concert Hall"],
+            "average_summer_temperature": "12°C",
+            "average_winter_temperature": "-1°C",
+            "number_of_museums": 15,
+            "official_language": "Icelandic",
+            "currency": "Icelandic Krona",
+            "currency_symbol": "ISK",
+            "recommended_accommodation": "Hotel",
+            "best_visit_period": "November to February",
+            "postal_code": "101",
+            "safety_index": "95/100",
+            "public_transport_index": 6,
+            "recommended_local_food": ["Skyr", "Lamb Soup", "Fish and Chips"]
+          }
+        },
+        {
+          "id": 18,
+          "city": "Lima",
+          "img_url": "https://media.vogue.mx/photos/5e19fa7ba3810f0008d96d3e/4:3/w_2880,h_2160,c_limit/Lima-%20La%20Costa%20Verde.jpg",
+          "country": "Peru",
+          "average_price_per_night": 45,
+          "recommended_duration_days": 5,
+          "price_by_type_in_usd": {
+            "camping": 25,
+            "airbnb": 40,
+            "hotel": 60
+          },
+          "season": "Spring",
+          "visa_required": false,
+          "activities": ["Sightseeing", "Cultural Tours", "Food Tasting"],
+          "pets_allowed": true,
+          "additional_info": {
+            "population": 9752000,
+            "main_attractions": ["Machu Picchu", "Plaza de Armas", "Miraflores"],
+            "average_summer_temperature": "26°C",
+            "average_winter_temperature": "16°C",
+            "number_of_museums": 50,
+            "official_language": "Spanish",
+            "currency": "Sol",
+            "currency_symbol": "PEN",
+            "recommended_accommodation": "Airbnb",
+            "best_visit_period": "March to May",
+            "postal_code": "15000",
+            "safety_index": "55/100",
+            "public_transport_index": 5,
+            "recommended_local_food": ["Ceviche", "Lomo Saltado", "Aji de Gallina"]
+          }
+        },
+        {
+          "id": 19,
+          "city": "Zurich",
+          "img_url": "https://w.forfun.com/fetch/1b/1b6920bccf93d169acb212664c248c2f.jpeg",
+          "country": "Switzerland",
+          "average_price_per_night": 250,
+          "recommended_duration_days": 4,
+          "price_by_type_in_usd": {
+            "camping": 150,
+            "airbnb": 220,
+            "hotel": 300
+          },
+          "season": "Winter",
+          "visa_required": false,
+          "activities": ["Sightseeing", "Skiing", "Shopping"],
+          "pets_allowed": true,
+          "additional_info": {
+            "population": 402762,
+            "main_attractions": ["Lake Zurich", "Bahnhofstrasse", "Old Town"],
+            "average_summer_temperature": "23°C",
+            "average_winter_temperature": "2°C",
             "number_of_museums": 50,
             "official_language": "German",
             "currency": "Swiss Franc",
@@ -460,125 +623,43 @@
             "best_visit_period": "December to February",
             "postal_code": "8000",
             "safety_index": "90/100",
-            "public_transport_index": 10,
-            "recommended_local_food": ["Fondue", "Raclette", "Rösti"]
-        }
-    },
-    {
-        "city": "Singapore",
-        "img_url": "",
-        "country": "Singapore",
-        "average_price_per_night": 250,
-        "recommended_duration_days": 4,
-        "price_by_type_in_usd": {
-            "camping": 120,
-            "airbnb": 210,
-            "hotel": 420
+            "public_transport_index": 9,
+            "recommended_local_food": ["Fondue", "Rosti", "Zopf"]
+          }
         },
-        "season": "Spring",
-        "additional_info": {
-            "population": 5612000,
-            "main_attractions": ["Marina Bay Sands", "Gardens by the Bay", "Sentosa"],
-            "average_summer_temperature": "31°C",
-            "average_winter_temperature": "25°C",
+        {
+          "id": 20,
+          "city": "Hanoi",
+          "img_url": "https://i.pinimg.com/originals/ad/be/8e/adbe8ecaedc2a7416ffbd222416d9080.jpg",
+          "country": "Vietnam",
+          "average_price_per_night": 30,
+          "recommended_duration_days": 5,
+          "price_by_type_in_usd": {
+            "camping": 15,
+            "airbnb": 25,
+            "hotel": 40
+          },
+          "season": "Winter",
+          "visa_required": true,
+          "activities": ["Sightseeing", "Cultural Tours", "Food Tasting"],
+          "pets_allowed": true,
+          "additional_info": {
+            "population": 8004000,
+            "main_attractions": ["Hoan Kiem Lake", "Old Quarter", "Temple of Literature"],
+            "average_summer_temperature": "32°C",
+            "average_winter_temperature": "16°C",
             "number_of_museums": 30,
-            "official_language": ["English", "Malay", "Mandarin", "Tamil"],
-            "currency": "Singapore Dollar",
-            "currency_symbol": "S$",
-            "recommended_accommodation": "Hotel",
-            "best_visit_period": "March to May",
-            "postal_code": "018989",
-            "safety_index": "95/100",
-            "public_transport_index": 10,
-            "recommended_local_food": ["Hainanese Chicken Rice", "Chili Crab", "Laksa"]
-        }
-    },
-    {
-        "city": "Reykjavik",
-        "img_url": "",
-        "country": "Iceland",
-        "average_price_per_night": 270,
-        "recommended_duration_days": 5,
-        "price_by_type_in_usd": {
-            "camping": 130,
-            "airbnb": 220,
-            "hotel": 460
-        },
-        "season": "Summer",
-        "additional_info": {
-            "population": 128793,
-            "main_attractions": ["Blue Lagoon", "Golden Circle", "Hallgrimskirkja"],
-            "average_summer_temperature": "13°C",
-            "average_winter_temperature": "-1°C",
-            "number_of_museums": 15,
-            "official_language": "Icelandic",
-            "currency": "Icelandic Krona",
-            "currency_symbol": "ISK",
-            "recommended_accommodation": "Hotel",
-            "best_visit_period": "June to August",
-            "postal_code": "101",
-            "safety_index": "92/100",
-            "public_transport_index": 7,
-            "recommended_local_food": ["Pylsur", "Skyr", "Lamb Soup"]
-        }
-    },
-    {
-        "city": "Dubai",
-        "img_url": "",
-        "country": "United Arab Emirates",
-        "average_price_per_night": 260,
-        "recommended_duration_days": 5,
-        "price_by_type_in_usd": {
-            "camping": 140,
-            "airbnb": 210,
-            "hotel": 430
-        },
-        "season": "Winter",
-        "additional_info": {
-            "population": 3331400,
-            "main_attractions": ["Burj Khalifa", "Dubai Mall", "Palm Jumeirah"],
-            "average_summer_temperature": "40°C",
-            "average_winter_temperature": "24°C",
-            "number_of_museums": 20,
-            "official_language": "Arabic",
-            "currency": "UAE Dirham",
-            "currency_symbol": "AED",
-            "recommended_accommodation": "Hotel",
-            "best_visit_period": "November to March",
-            "postal_code": "00000",
-            "safety_index": "88/100",
-            "public_transport_index": 9,
-            "recommended_local_food": ["Shawarma", "Al Harees", "Falafel"]
-        }
-    },
-    {
-        "city": "Oslo",
-        "img_url": "",
-        "country": "Norway",
-        "average_price_per_night": 250,
-        "recommended_duration_days": 4,
-        "price_by_type_in_usd": {
-            "camping": 120,
-            "airbnb": 200,
-            "hotel": 430
-        },
-        "season": "Summer",
-        "additional_info": {
-            "population": 681067,
-            "main_attractions": ["Vigeland Park", "Akershus Fortress", "The Viking Ship Museum"],
-            "average_summer_temperature": "22°C",
-            "average_winter_temperature": "-3°C",
-            "number_of_museums": 40,
-            "official_language": "Norwegian",
-            "currency": "Norwegian Krone",
-            "currency_symbol": "NOK",
-            "recommended_accommodation": "Hotel",
-            "best_visit_period": "June to August",
-            "postal_code": "0150",
-            "safety_index": "89/100",
-            "public_transport_index": 9,
-            "recommended_local_food": ["Lutefisk", "Kjøttkaker", "Brunost"]
-        }
-    }
-  ]
-}
+            "official_language": "Vietnamese",
+            "currency": "Vietnamese Dong",
+            "currency_symbol": "VND",
+            "recommended_accommodation": "Airbnb",
+            "best_visit_period": "November to February",
+            "postal_code": "100000",
+            "safety_index": "70/100",
+            "public_transport_index": 6,
+            "recommended_local_food": ["Pho", "Banh Mi", "Bun Cha"]
+          }
+        }      
+    ]
+  }
+  
