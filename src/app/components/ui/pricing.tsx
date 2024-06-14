@@ -2,8 +2,11 @@ import { Button } from "@/app/components/ui/button";
 
 export function Pricing() {
   return (
-    <section className="flex justify-center w-full py-12 md:py-24 lg:py-32  bg-dark-color">
-      <div className="container grid gap-8 px-4 md:px-6">
+    <section
+      id="pricing"
+      className="flex justify-center w-full py-12 md:py-24 lg:py-32  bg-dark-color"
+    >
+      <div className="container grid gap-8 px-12 md:px-6">
         <div className="mx-auto grid max-w-4xl gap-4 text-center">
           <div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-50">
