@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type Tab = {
-  title: string;
+  id: number;
   value: string;
   content?: string | React.ReactNode | any;
 };
@@ -40,13 +40,13 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full pb-16",
           containerClassName
         )}
       >
         {propTabs.map((tab, idx) => (
           <button
-            key={tab.title}
+            key={tab.id}
             onClick={() => {
               moveSelectedTabToTop(idx);
             }}
@@ -73,14 +73,14 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block">{tab.title}</span>
+            <span className="relative block">{tab.value}</span>
           </button>
         ))}
       </div>
       <FadeInDiv
         tabs={tabs}
         active={active}
-        key={active.value}
+        key={active.id}
         hovering={hovering}
         className={cn("mt-4", contentClassName)}
       />
@@ -95,7 +95,7 @@ export const FadeInDiv = ({
   hovering,
 }: {
   className?: string;
-  key?: string;
+  key?: number;
   tabs: Tab[];
   active: Tab;
   hovering?: boolean;

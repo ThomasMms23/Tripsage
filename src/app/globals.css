@@ -21,3 +21,13 @@ body {
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.loader {
+  border-top-color: #FEBC17;
+  animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+

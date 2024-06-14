@@ -1,6 +1,7 @@
 {
   "trips": [
       {
+          "id": 1,
           "city": "Paris",
           "img_url": "https://i.pinimg.com/originals/35/33/ad/3533adba2e1983f7c8b9809e1d2b82ea.jpg",
           "country": "France",
@@ -30,6 +31,7 @@
           }
       },
       {
+          "id": 2,
           "city": "Tokyo",
           "img_url": "https://wallpaper.forfun.com/fetch/62/62f54eab41253d1fe844ea258466179e.jpeg",
           "country": "Japan",
@@ -59,6 +61,7 @@
           }
       },
       {
+          "id": 3,
           "city": "New York",
           "img_url": "https://wallpapers.com/images/featured/new-york-city-5oaa14h4mw6w3o71.jpg",
           "country": "United States",
@@ -88,6 +91,7 @@
           }
       },
       {
+          "id": 4,
           "city": "Sydney",
           "img_url": "https://cms.finnair.com/resource/blob/747612/3523a759b61b788b834fe56aa57fa255/sydney-main-data.jpg?impolicy=crop&width=4000&height=1714&x=0&y=447",
           "country": "Australia",
@@ -117,6 +121,7 @@
           }
       },
       {
+          "id": 5,
           "city": "Cape Town",
           "img_url": "https://cdn.britannica.com/42/126842-050-0803BC41/Sea-Point-Cape-Town-SAf.jpg",
           "country": "South Africa",
@@ -146,6 +151,7 @@
           }
       },
       {
+          "id": 6,
           "city": "Rio de Janeiro",
           "img_url": "https://preview.redd.it/hhnfd8u8qtz31.jpg?auto=webp&s=a0b091aefc2c4ddf336a254f486bd2d3cd440ca0",
           "country": "Brazil",
@@ -175,6 +181,7 @@
           }
       },
       {
+          "id": 7,
           "city": "Bangkok",
           "img_url": "https://images8.alphacoders.com/486/thumb-1920-486625.jpg",
           "country": "Thailand",
