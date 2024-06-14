@@ -65,14 +65,20 @@ export function TabsDemo() {
 
   const handleFilterSubmit = () => {
     const filtered = data.trips.filter(trip => {
-      const matchesBudget = filters.budget ? trip.average_price_per_night <= parseFloat(filters.budget) : true;
+      const matchesBudget = filters.budget ? (
+        filters.type ? trip.price_by_type_in_usd[filters.type as AccommodationType] <= parseFloat(filters.budget) :
+        trip.average_price_per_night <= parseFloat(filters.budget)
+      ) : true;
+
       const matchesType = filters.type ? trip.price_by_type_in_usd[filters.type as AccommodationType] !== undefined : true;
       const matchesSeason = filters.season ? trip.season.toLowerCase() === filters.season.toLowerCase() : true;
       const matchesVisaRequired = filters.visaRequired ? trip.visa_required === (filters.visaRequired === 'true') : true;
       const matchesActivity = filters.activity ? trip.activities.includes(filters.activity) : true;
       const matchesPetsAllowed = filters.petsAllowed ? trip.pets_allowed === (filters.petsAllowed === 'true') : true;
+
       return matchesBudget && matchesType && matchesSeason && matchesVisaRequired && matchesActivity && matchesPetsAllowed;
     });
+
     setFilteredTrips(filtered);
     setShowForm(false);
   };
