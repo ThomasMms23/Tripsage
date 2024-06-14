@@ -16,7 +16,7 @@ export function Pricing() {
         </div>
         <div className="grid gap-6 sm:grid-cols-3 ">
           <div className="rounded-lg  p-6 shadow-sm  dark:bg-main-color">
-            <div className="flex flex-col h-full gap-2 relative min-h-80	">
+            <div className="flex flex-col h-full gap-3 relative min-h-96">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Free</h3>
                 <p className="text-gray-400 dark:text-gray-400">
@@ -45,7 +45,7 @@ export function Pricing() {
             </div>
           </div>
           <div className=" rounded-lg  p-6 shadow-sm  dark:bg-main-color">
-            <div className="relative flex flex-col h-full gap-2 min-h-80	">
+            <div className="relative flex flex-col h-full gap-3 min-h-96	">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Pro</h3>
                 <p className="text-gray-400 dark:text-gray-400">
@@ -77,7 +77,7 @@ export function Pricing() {
             <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-main-yellow semi-bold px-1.5 py-0.5 rounded-full text-xs uppercase font-semibold">
               Popular
             </span>
-            <div className="flex flex-col relative h-full gap-2 min-h-80">
+            <div className="flex flex-col relative h-full gap-3 min-h-96">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Entreprise</h3>
                 <p className="text-gray-400 dark:text-gray-400">
@@ -106,7 +106,9 @@ export function Pricing() {
                   Priority support
                 </li>
               </ul>
-              <Button className="w-full absolute bottom-3">Get started</Button>
+              <Button className="w-full absolute bottom-3 bg-main-yellow">
+                Get started
+              </Button>
             </div>
           </div>
         </div>
