@@ -27,6 +27,8 @@ interface Trip {
   season: string;
 }
 
+type AccommodationType = 'camping' | 'airbnb' | 'hotel';
+
 export function TabsDemo() {
   const [showForm, setShowForm] = useState(true);
   const [filteredTrips, setFilteredTrips] = useState<Trip[]>(data.trips);
@@ -45,7 +47,7 @@ export function TabsDemo() {
   const handleFilterSubmit = () => {
     const filtered = data.trips.filter(trip => {
       const matchesBudget = filters.budget ? trip.average_price_per_night <= parseFloat(filters.budget) : true;
-      const matchesType = filters.type ? trip.price_by_type_in_usd[filters.type] !== undefined : true;
+      const matchesType = filters.type ? trip.price_by_type_in_usd[filters.type as AccommodationType] !== undefined : true;
       const matchesDuration = filters.duration ? trip.recommended_duration_days === parseInt(filters.duration) : true;
       const matchesSeason = filters.season ? trip.season.toLowerCase() === filters.season.toLowerCase() : true;
       return matchesBudget && matchesType && matchesDuration && matchesSeason;
@@ -82,8 +84,8 @@ export function TabsDemo() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
-            className="max-w-xl mx-auto bg-gray-800 p-6 rounded-lg shadow-lg"
+            transition={{ duration: 0.7, ease: 'easeInOut' }}
+            className="max-w-xl mx-auto p-6 border-2 border-main-yellow rounded-lg bg-black"
           >
             <h2 className="text-2xl font-bold mb-4 text-white">Filter Trips</h2>
             <div className="mb-4">
@@ -93,7 +95,7 @@ export function TabsDemo() {
                 name="budget"
                 value={filters.budget}
                 onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-700 rounded-md bg-gray-900 text-white"
+                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
               />
             </div>
             <div className="mb-4">
@@ -102,7 +104,8 @@ export function TabsDemo() {
                 name="type"
                 value={filters.type}
                 onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-700 rounded-md bg-gray-900 text-white"
+                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
+                style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
               >
                 <option value="">Any</option>
                 <option value="camping">Camping</option>
@@ -117,7 +120,7 @@ export function TabsDemo() {
                 name="duration"
                 value={filters.duration}
                 onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-700 rounded-md bg-gray-900 text-white"
+                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
               />
             </div>
             <div className="mb-4">
@@ -126,7 +129,8 @@ export function TabsDemo() {
                 name="season"
                 value={filters.season}
                 onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-700 rounded-md bg-gray-900 text-white"
+                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
+                style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
               >
                 <option value="">Any</option>
                 <option value="Spring">Spring</option>
@@ -135,12 +139,14 @@ export function TabsDemo() {
                 <option value="Winter">Winter</option>
               </select>
             </div>
-            <button
-              onClick={handleFilterSubmit}
-              className="w-full bg-main-yellow text-white py-2 rounded-md"
-            >
-              Apply Filters
-            </button>
+            <div className="flex justify-center">
+              <button
+                onClick={handleFilterSubmit}
+                className="bg-main-yellow text-white py-2 px-4 rounded-md hover:bg-yellow-600 transition-colors duration-300"
+              >
+                Apply Filters
+              </button>
+            </div>
           </motion.div>
         ) : (
           <motion.div
@@ -148,16 +154,30 @@ export function TabsDemo() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
-            className="h-[30rem] md:h-[40rem] perspective-[1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-20"
+            transition={{ duration: 0.7, ease: 'easeInOut' }}
+            className={`relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start ${filteredTrips.length > 0 ? 'h-[30rem] md:h-[40rem] my-20' : 'h-64 my-10'}`}
           >
-            <button
-              onClick={resetFilters}
-              className="mb-4 bg-main-yellow text-white py-2 px-4 rounded-md"
-            >
-              Back to Search
-            </button>
-            <Tabs tabs={tabs} />
+            {filteredTrips.length > 0 ? (
+              <>
+                <button
+                  onClick={resetFilters}
+                  className="mb-4 bg-main-yellow text-white py-2 px-4 rounded-md"
+                >
+                  Back to Search
+                </button>
+                <Tabs tabs={tabs} />
+              </>
+            ) : (
+              <div className="flex flex-col items-center justify-center w-full h-full text-white">
+                <p className="text-2xl mb-4">No trips match your filters.</p>
+                <button
+                  onClick={resetFilters}
+                  className="bg-main-yellow text-white py-2 px-4 rounded-md"
+                >
+                  Reset Filters
+                </button>
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
