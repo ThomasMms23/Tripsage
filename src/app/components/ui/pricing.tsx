@@ -44,7 +44,10 @@ export function Pricing() {
               <Button className="w-full absolute bottom-3">Get started</Button>
             </div>
           </div>
-          <div className=" rounded-lg  p-6 shadow-sm  dark:bg-main-color">
+          <div className="relative rounded-lg border p-6 shadow-sm  dark:bg-main-color dark:border-main-yellow">
+            <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-main-yellow semi-bold px-1.5 py-0.5 rounded-full text-xs uppercase font-semibold">
+              Popular
+            </span>
             <div className="relative flex flex-col h-full gap-3 min-h-96	">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Pro</h3>
@@ -73,10 +76,7 @@ export function Pricing() {
               <Button className="w-full absolute bottom-3">Get started</Button>
             </div>
           </div>
-          <div className="relative rounded-lg border p-6 shadow-sm dark:bg-main-color  dark:border-main-yellow">
-            <span className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-main-yellow semi-bold px-1.5 py-0.5 rounded-full text-xs uppercase font-semibold">
-              Popular
-            </span>
+          <div className="relative rounded-lg p-6 shadow-sm dark:bg-main-color">
             <div className="flex flex-col relative h-full gap-3 min-h-96">
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-gray-50">Entreprise</h3>
