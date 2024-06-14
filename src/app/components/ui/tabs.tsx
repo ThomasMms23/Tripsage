@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full pb-16",
+          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-x-auto no-visible-scrollbar max-w-full w-full py-4 mb-12",
           containerClassName
         )}
       >
@@ -53,7 +53,7 @@ export const Tabs = ({
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             className={cn(
-              "relative px-4 py-2 rounded-full text-white",
+              "relative px-4 py-2 rounded-full text-white whitespace-nowrap",
               tabClassName,
               active.value === tab.value ? "bg-main-yellow" : ""
             )}
@@ -72,7 +72,6 @@ export const Tabs = ({
                 )}
               />
             )}
-
             <span className="relative block">{tab.value}</span>
           </button>
         ))}

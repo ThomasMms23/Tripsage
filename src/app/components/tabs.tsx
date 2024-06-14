@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Tabs } from './ui/tabs';
 import { motion, AnimatePresence } from 'framer-motion';
-import data from '../../data/dataa.json';
+import data from '../../data/data.json';
+import { BorderBeam } from "./ui/border-beam";
 
 interface TabContentProps {
   image: string;
@@ -25,6 +26,9 @@ interface Trip {
     hotel: number;
   };
   season: string;
+  visa_required: boolean;
+  activities: string[];
+  pets_allowed: boolean;
 }
 
 type AccommodationType = 'camping' | 'airbnb' | 'hotel';
@@ -35,9 +39,24 @@ export function TabsDemo() {
   const [filters, setFilters] = useState({
     budget: '',
     type: '',
-    duration: '',
     season: '',
+    visaRequired: '',
+    activity: '',
+    petsAllowed: ''
   });
+
+  const activitiesOptions = [
+    "Hiking",
+    "Swimming",
+    "Skiing",
+    "Sightseeing",
+    "Shopping",
+    "Cultural tours",
+    "Nightlife",
+    "Wildlife tours",
+    "Beach",
+    "Adventure sports"
+  ];
 
   const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -48,16 +67,18 @@ export function TabsDemo() {
     const filtered = data.trips.filter(trip => {
       const matchesBudget = filters.budget ? trip.average_price_per_night <= parseFloat(filters.budget) : true;
       const matchesType = filters.type ? trip.price_by_type_in_usd[filters.type as AccommodationType] !== undefined : true;
-      const matchesDuration = filters.duration ? trip.recommended_duration_days === parseInt(filters.duration) : true;
       const matchesSeason = filters.season ? trip.season.toLowerCase() === filters.season.toLowerCase() : true;
-      return matchesBudget && matchesType && matchesDuration && matchesSeason;
+      const matchesVisaRequired = filters.visaRequired ? trip.visa_required === (filters.visaRequired === 'true') : true;
+      const matchesActivity = filters.activity ? trip.activities.includes(filters.activity) : true;
+      const matchesPetsAllowed = filters.petsAllowed ? trip.pets_allowed === (filters.petsAllowed === 'true') : true;
+      return matchesBudget && matchesType && matchesSeason && matchesVisaRequired && matchesActivity && matchesPetsAllowed;
     });
     setFilteredTrips(filtered);
     setShowForm(false);
   };
 
   const resetFilters = () => {
-    setFilters({ budget: '', type: '', duration: '', season: '' });
+    setFilters({ budget: '', type: '', season: '', visaRequired: '', activity: '', petsAllowed: '' });
     setFilteredTrips(data.trips);
     setShowForm(true);
   };
@@ -85,64 +106,100 @@ export function TabsDemo() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.7, ease: 'easeInOut' }}
-            className="max-w-xl mx-auto p-6 border-2 border-main-yellow rounded-lg bg-black"
+            className="relative max-w-5xl mx-auto p-6 border border-gray-600 rounded-lg bg-black"
           >
-            <h2 className="text-2xl font-bold mb-4 text-white">Filter Trips</h2>
-            <div className="mb-4">
-              <label className="block mb-2 text-white">Budget (max price per night)</label>
-              <input
-                type="number"
-                name="budget"
-                value={filters.budget}
-                onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
-              />
+            <h2 className="text-3xl font-bold mb-8 text-white text-center">Filter Trips</h2>
+            <BorderBeam />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="relative mb-4">
+                <label className="block mb-2 text-white">Budget (max price per night)</label>
+                <input
+                  type="number"
+                  name="budget"
+                  value={filters.budget}
+                  onChange={handleFilterChange}
+                  className="w-full border-b border-gray-600 bg-transparent text-white focus:outline-none focus:border-main-yellow transition-colors"
+                />
+              </div>
+              <div className="relative mb-4">
+                <label className="block mb-2 text-white">Type of Accommodation</label>
+                <select
+                  name="type"
+                  value={filters.type}
+                  onChange={handleFilterChange}
+                  className="w-full border-b border-gray-600 bg-transparent text-white focus:outline-none focus:border-main-yellow transition-colors"
+                  style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
+                >
+                  <option value="">Any</option>
+                  <option value="camping">Camping</option>
+                  <option value="airbnb">Airbnb</option>
+                  <option value="hotel">Hotel</option>
+                </select>
+              </div>
+              <div className="relative mb-4">
+                <label className="block mb-2 text-white">Season</label>
+                <select
+                  name="season"
+                  value={filters.season}
+                  onChange={handleFilterChange}
+                  className="w-full border-b border-gray-600 bg-transparent text-white focus:outline-none focus:border-main-yellow transition-colors"
+                  style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
+                >
+                  <option value="">Any</option>
+                  <option value="Spring">Spring</option>
+                  <option value="Summer">Summer</option>
+                  <option value="Fall">Fall</option>
+                  <option value="Winter">Winter</option>
+                </select>
+              </div>
+              <div className="relative mb-4">
+                <label className="block mb-2 text-white">Visa Required</label>
+                <select
+                  name="visaRequired"
+                  value={filters.visaRequired}
+                  onChange={handleFilterChange}
+                  className="w-full border-b border-gray-600 bg-transparent text-white focus:outline-none focus:border-main-yellow transition-colors"
+                  style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
+                >
+                  <option value="">Any</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+              <div className="relative mb-4">
+                <label className="block mb-2 text-white">Activities Available</label>
+                <select
+                  name="activity"
+                  value={filters.activity}
+                  onChange={handleFilterChange}
+                  className="w-full border-b border-gray-600 bg-transparent text-white focus:outline-none focus:border-main-yellow transition-colors"
+                  style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
+                >
+                  <option value="">Any</option>
+                  {activitiesOptions.map((activity) => (
+                    <option key={activity} value={activity}>{activity}</option>
+                  ))}
+                </select>
+              </div>
+              <div className="relative mb-4">
+                <label className="block mb-2 text-white">Pets Allowed</label>
+                <select
+                  name="petsAllowed"
+                  value={filters.petsAllowed}
+                  onChange={handleFilterChange}
+                  className="w-full border-b border-gray-600 bg-transparent text-white focus:outline-none focus:border-main-yellow transition-colors"
+                  style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
+                >
+                  <option value="">Any</option>
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
             </div>
-            <div className="mb-4">
-              <label className="block mb-2 text-white">Type of Accommodation</label>
-              <select
-                name="type"
-                value={filters.type}
-                onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
-                style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
-              >
-                <option value="">Any</option>
-                <option value="camping">Camping</option>
-                <option value="airbnb">Airbnb</option>
-                <option value="hotel">Hotel</option>
-              </select>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2 text-white">Recommended Duration (days)</label>
-              <input
-                type="number"
-                name="duration"
-                value={filters.duration}
-                onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2 text-white">Season</label>
-              <select
-                name="season"
-                value={filters.season}
-                onChange={handleFilterChange}
-                className="w-full p-2 border border-gray-400 rounded-md bg-gray-700 text-white focus:outline-none focus:border-main-yellow"
-                style={{ paddingRight: '2rem' }} // Adjust padding to move the icon
-              >
-                <option value="">Any</option>
-                <option value="Spring">Spring</option>
-                <option value="Summer">Summer</option>
-                <option value="Fall">Fall</option>
-                <option value="Winter">Winter</option>
-              </select>
-            </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-6">
               <button
                 onClick={handleFilterSubmit}
-                className="bg-main-yellow text-white py-2 px-4 rounded-md hover:bg-yellow-600 transition-colors duration-300"
+                className="bg-main-yellow text-white py-2 px-8 rounded-md hover:bg-yellow-600 transition-colors duration-300 cursor-pointer z-50"
               >
                 Apply Filters
               </button>
@@ -160,7 +217,7 @@ export function TabsDemo() {
             {filteredTrips.length > 0 ? (
               <>
                 <button
-                  onClick={resetFilters}
+                  onClick={() => setShowForm(true)}
                   className="mb-4 bg-main-yellow text-white py-2 px-4 rounded-md"
                 >
                   Back to Search
@@ -171,7 +228,7 @@ export function TabsDemo() {
               <div className="flex flex-col items-center justify-center w-full h-full text-white">
                 <p className="text-2xl mb-4">No trips match your filters.</p>
                 <button
-                  onClick={resetFilters}
+                  onClick={() => setShowForm(true)}
                   className="bg-main-yellow text-white py-2 px-4 rounded-md"
                 >
                   Reset Filters
