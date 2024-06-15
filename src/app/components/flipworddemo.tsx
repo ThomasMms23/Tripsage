@@ -1,6 +1,7 @@
 import React from "react";
 import { FlipWords } from "../components/ui/flip-words";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export function FlipWordsDemo() {
   const words = ["memorable", "sensational", "adventurous"];
@@ -17,7 +18,9 @@ export function FlipWordsDemo() {
           budget, season, and weather, and let us find the perfect destination
           for you. Start exploring now!
         </p>
-        <Button className="mt-6 w-64">Discover</Button>
+        <Link href="#search">
+          <Button className="mt-6 w-64">Discover</Button>
+        </Link>
       </div>
     </div>
   );
