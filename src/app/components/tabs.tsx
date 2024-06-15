@@ -133,7 +133,7 @@ export function TabsDemo() {
   }));
 
   return (
-    <div className="pb-24 p-6">
+    <div id="search" className="py-24 p-6">
       <AnimatePresence>
         {showForm ? (
           <motion.div

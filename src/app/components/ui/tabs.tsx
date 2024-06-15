@@ -55,7 +55,9 @@ export const Tabs = ({
             className={cn(
               "relative px-4 py-2 rounded-full text-white whitespace-nowrap",
               tabClassName,
-              active.value === tab.value ? "bg-main-yellow" : ""
+              active.value === tab.value
+                ? "bg-main-yellow, text-black, font-semibold"
+                : ""
             )}
             style={{
               transformStyle: "preserve-3d",

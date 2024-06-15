@@ -52,9 +52,9 @@ const Header: React.FC = () => {
             Pricing
           </a>
         </Link>
-        <Link legacyBehavior href="#demo" passHref>
-          <a className={isActiveLink("#demo")} onClick={closeNav}>
-            Demo
+        <Link legacyBehavior href="#search" passHref>
+          <a className={isActiveLink("#search")} onClick={closeNav}>
+            Search
           </a>
         </Link>
         <Link legacyBehavior href="#faq" passHref>
