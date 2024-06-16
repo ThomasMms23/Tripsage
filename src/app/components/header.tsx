@@ -54,7 +54,7 @@ const Header: React.FC = () => {
         </Link>
         <Link legacyBehavior href="#demo" passHref>
           <a className={isActiveLink("#demo")} onClick={closeNav}>
-            Demo
+            Search
           </a>
         </Link>
         <Link legacyBehavior href="#faq" passHref>
