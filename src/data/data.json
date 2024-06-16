@@ -28,7 +28,7 @@
           "recommended_accommodation": "Airbnb",
           "best_visit_period": "April to October",
           "postal_code": "75001 to 75020",
-          "safety_index": "83/100",
+          "safety_index": 83,
           "public_transport_index": 9,
           "recommended_local_food": ["Baguettes", "Croissants", "Cheese"]
         }
@@ -61,7 +61,7 @@
           "recommended_accommodation": "Hotel",
           "best_visit_period": "March to May",
           "postal_code": "100-0000",
-          "safety_index": "86/100",
+          "safety_index": 86,
           "public_transport_index": 10,
           "recommended_local_food": ["Sushi", "Ramen", "Tempura"]
         }
@@ -94,7 +94,7 @@
           "recommended_accommodation": "Airbnb",
           "best_visit_period": "September to November",
           "postal_code": "10001 to 10292",
-          "safety_index": "74/100",
+          "safety_index": 74,
           "public_transport_index": 9,
           "recommended_local_food": ["Bagels", "New York-style Pizza", "Cheesecake"]
         }
@@ -127,7 +127,7 @@
           "recommended_accommodation": "Hotel",
           "best_visit_period": "December to February",
           "postal_code": "2000",
-          "safety_index": "91/100",
+          "safety_index": 91,
           "public_transport_index": 8,
           "recommended_local_food": ["Australian BBQ", "Vegemite", "Pies"]
         }
@@ -160,7 +160,7 @@
           "recommended_accommodation": "Airbnb",
           "best_visit_period": "September to November",
           "postal_code": "8001",
-          "safety_index": "60/100",
+          "safety_index": 60,
           "public_transport_index": 6,
           "recommended_local_food": ["Biltong", "Bobotie", "Braai"]
         }
@@ -193,7 +193,7 @@
           "recommended_accommodation": "Hotel",
           "best_visit_period": "December to March",
           "postal_code": "20000-000",
-          "safety_index": "55/100",
+          "safety_index": 55,
           "public_transport_index": 7,
           "recommended_local_food": ["Feijoada", "Pão de queijo", "Brigadeiro"]
         }
@@ -226,7 +226,7 @@
           "recommended_accommodation": "Airbnb",
           "best_visit_period": "November to February",
           "postal_code": "10100",
-          "safety_index": "75/100",
+          "safety_index": 75,
           "public_transport_index": 8,
           "recommended_local_food": ["Pad Thai", "Tom Yum", "Som Tum"]
         }
@@ -259,7 +259,7 @@
           "recommended_accommodation": "Hotel",
           "best_visit_period": "April to June",
           "postal_code": "34000",
-          "safety_index": "72/100",
+          "safety_index": 72,
           "public_transport_index": 7,
           "recommended_local_food": ["Kebab", "Baklava", "Meze"]
         }
@@ -292,7 +292,7 @@
           "recommended_accommodation": "Hotel",
           "best_visit_period": "September to November",
           "postal_code": "00100",
-          "safety_index": "70/100",
+          "safety_index": 70,
           "public_transport_index": 7,
           "recommended_local_food": ["Pizza", "Pasta", "Gelato"]
         }
@@ -325,7 +325,7 @@
           "recommended_accommodation": "Hotel",
           "best_visit_period": "March to May",
           "postal_code": "40000",
-          "safety_index": "65/100",
+          "safety_index": 65,
           "public_transport_index": 6,
           "recommended_local_food": ["Tagine", "Couscous", "Mint Tea"]
         }
@@ -358,7 +358,7 @@
             "recommended_accommodation": "Hotel",
             "best_visit_period": "November to March",
             "postal_code": "00000",
-            "safety_index": "90/100",
+            "safety_index": 90,
             "public_transport_index": 8,
             "recommended_local_food": ["Shawarma", "Hummus", "Falafel"]
           }
@@ -391,7 +391,7 @@
             "recommended_accommodation": "Airbnb",
             "best_visit_period": "March to May",
             "postal_code": "600-0000",
-            "safety_index": "85/100",
+            "safety_index": 85,
             "public_transport_index": 9,
             "recommended_local_food": ["Kaiseki", "Yudofu", "Kyoto Sushi"]
           }
@@ -424,7 +424,7 @@
             "recommended_accommodation": "Resort",
             "best_visit_period": "May to October",
             "postal_code": "20000",
-            "safety_index": "88/100",
+            "safety_index": 88,
             "public_transport_index": 4,
             "recommended_local_food": ["Garudhiya", "Mas Huni", "Fihunu Mas"]
           }
@@ -457,7 +457,7 @@
             "recommended_accommodation": "Airbnb",
             "best_visit_period": "March to May",
             "postal_code": "44600",
-            "safety_index": "60/100",
+            "safety_index": 60,
             "public_transport_index": 5,
             "recommended_local_food": ["Momo", "Dal Bhat", "Newari Cuisine"]
           }
@@ -490,7 +490,7 @@
             "recommended_accommodation": "Hotel",
             "best_visit_period": "June to September",
             "postal_code": "84700",
-            "safety_index": "80/100",
+            "safety_index": 80,
             "public_transport_index": 7,
             "recommended_local_food": ["Fava", "Tomatokeftedes", "Melitinia"]
           }
@@ -523,7 +523,7 @@
             "recommended_accommodation": "Airbnb",
             "best_visit_period": "March to May",
             "postal_code": "1000",
-            "safety_index": "65/100",
+            "safety_index": 65,
             "public_transport_index": 7,
             "recommended_local_food": ["Asado", "Empanadas", "Milanesa"]
           }
@@ -556,7 +556,7 @@
             "recommended_accommodation": "Hotel",
             "best_visit_period": "November to February",
             "postal_code": "101",
-            "safety_index": "95/100",
+            "safety_index": 95,
             "public_transport_index": 6,
             "recommended_local_food": ["Skyr", "Lamb Soup", "Fish and Chips"]
           }
@@ -589,7 +589,7 @@
             "recommended_accommodation": "Airbnb",
             "best_visit_period": "March to May",
             "postal_code": "15000",
-            "safety_index": "55/100",
+            "safety_index": 55,
             "public_transport_index": 5,
             "recommended_local_food": ["Ceviche", "Lomo Saltado", "Aji de Gallina"]
           }
@@ -622,7 +622,7 @@
             "recommended_accommodation": "Hotel",
             "best_visit_period": "December to February",
             "postal_code": "8000",
-            "safety_index": "90/100",
+            "safety_index": 90,
             "public_transport_index": 9,
             "recommended_local_food": ["Fondue", "Rosti", "Zopf"]
           }
@@ -655,7 +655,7 @@
             "recommended_accommodation": "Airbnb",
             "best_visit_period": "November to February",
             "postal_code": "100000",
-            "safety_index": "70/100",
+            "safety_index": 70,
             "public_transport_index": 6,
             "recommended_local_food": ["Pho", "Banh Mi", "Bun Cha"]
           }

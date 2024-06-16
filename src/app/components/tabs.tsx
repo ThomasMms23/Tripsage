@@ -45,6 +45,7 @@ export function TabsDemo() {
     activity: "",
     petsAllowed: "",
   });
+  const [searchQuery, setSearchQuery] = useState("");
 
   const activitiesOptions = [
     "Hiking",
@@ -64,6 +65,10 @@ export function TabsDemo() {
   ) => {
     const { name, value } = e.target;
     setFilters((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
   };
 
   const handleFilterSubmit = () => {
@@ -119,7 +124,9 @@ export function TabsDemo() {
     setShowForm(true);
   };
 
-  const tabs = filteredTrips.map((trip) => ({
+  const filteredTabs = filteredTrips.filter((trip) =>
+    trip.city.toLowerCase().includes(searchQuery.toLowerCase())
+  ).map((trip) => ({
     id: trip.id,
     value: trip.city,
     content: (
@@ -273,15 +280,21 @@ export function TabsDemo() {
             }`}
           >
             {filteredTrips.length > 0 ? (
-              <>
+              <div className="w-full flex justify-between items-center mb-4">
                 <Button
                   onClick={() => setShowForm(true)}
-                  className="mb-4 bg-main-yellow text-white py-2 px-4 rounded-md"
+                  className="bg-main-yellow text-white py-2 px-4 rounded-md"
                 >
                   Back to Search
                 </Button>
-                <Tabs tabs={tabs} />
-              </>
+                <input
+                  type="text"
+                  placeholder="Search cities..."
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  className="w-1/3 p-2 border-b-2 border-main-yellow bg-transparent text-white focus:outline-none focus:border-main-yellow placeholder-gray-400 transition-colors"
+                />
+              </div>
             ) : (
               <div className="flex flex-col items-center justify-center w-full h-full text-white">
                 <p className="text-2xl mb-4">No trips match your filters.</p>
@@ -293,6 +306,7 @@ export function TabsDemo() {
                 </Button>
               </div>
             )}
+            <Tabs tabs={filteredTabs} />
           </motion.div>
         )}
       </AnimatePresence>
