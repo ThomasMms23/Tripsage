@@ -8,7 +8,7 @@ export function FlipWordsDemo() {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="sm:text-center sm:mt-24">
+      <div className="text-center mt-24 lg:text-left lg:mt-0">
         <div className="leading-tight font-extrabold text-4xl lg:text-5xl mx-auto text-neutral-600 dark:text-neutral-100">
           Your budget, your rules: choose trips that are{" "}
           <FlipWords words={words} />

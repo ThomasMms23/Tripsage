@@ -28,7 +28,7 @@ const Header: React.FC = () => {
     pathname === path ? "activeLink" : "";
 
   return (
-    <header className="header">
+    <header className="header z-50">
       <Link href="/" passHref>
         <Image
           alt="logo"

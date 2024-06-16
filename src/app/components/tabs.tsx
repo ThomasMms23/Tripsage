@@ -134,6 +134,14 @@ export function TabsDemo() {
 
   return (
     <div id="search" className="py-24 p-6">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-gray-50">
+          Search Your Ideal Destination
+        </h2>
+        <p className="text-gray-400 md:text-xl/relaxed dark:text-gray-400">
+          Filter for a customized travel experience.
+        </p>
+      </div>
       <AnimatePresence>
         {showForm ? (
           <motion.div
@@ -245,7 +253,7 @@ export function TabsDemo() {
             <div className="flex justify-center mt-6">
               <Button
                 onClick={handleFilterSubmit}
-                className="bg-main-yellow text-white py-2 px-8 rounded-md hover:bg-yellow-600 transition-colors duration-300 cursor-pointer z-50"
+                className="bg-main-yellow text-white py-2 px-8 rounded-md hover:bg-yellow-600 transition-colors duration-300 cursor-pointer z-40"
               >
                 Apply Filters
               </Button>
