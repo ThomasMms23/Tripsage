@@ -18,7 +18,7 @@ export function FlipWordsDemo() {
           budget, season, and weather, and let us find the perfect destination
           for you. Start exploring now!
         </p>
-        <Link legacyBehavior href="#demo" passHref>
+        <Link href="#search">
           <Button className="mt-6 w-64">Discover</Button>
         </Link>
       </div>
