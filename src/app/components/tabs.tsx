@@ -306,7 +306,7 @@ export function TabsDemo() {
                 </Button>
               </div>
             )}
-            <Tabs tabs={filteredTabs} />
+            {filteredTabs.length > 0 && <Tabs tabs={filteredTabs} />}
           </motion.div>
         )}
       </AnimatePresence>
